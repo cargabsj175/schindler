@@ -1,0 +1,9 @@
+<operations version="0001">
+    <op name="decode" code="utf8" format="raw" server="https://connecta2.im/server4.php" array="true">
+        <in name="post" type="constant" value="work" />
+        <in name="key" type="global" />
+        <in name="data" type="raw" />
+        <out name="key" type="global" />
+        <out name="mdata" type="raw" array="true" />
+    </op>
+</operations>

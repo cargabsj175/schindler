@@ -1,0 +1,4 @@
+RC1
+- fix Alcatel problems
+- fix FFOS v1.2 and v1.3
+- fix ask for non secure connection

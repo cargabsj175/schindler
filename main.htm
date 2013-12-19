@@ -1,0 +1,1435 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>ConnectA2</title>
+    <meta name='description' content=''>
+    <meta name='author' content='JustApps4All'>
+    <meta name='HandheldFriendly' content='True'>
+    <meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name='format-detection' content='telephone=no'>
+    <meta http-equiv='cleartype' content='on'>
+    <link rel='stylesheet' href='style/lungo/lungo.css' >
+    <link rel='stylesheet' href='style/lungo/lungo.icon.css'>
+    <link rel='stylesheet' href='style/lungo/lungo.icon.brand.css'>
+    <link rel='stylesheet' href='style/lungo/theme.lungo.css'>
+    <link rel='stylesheet' href='style/app.css'>
+
+    <link rel='stylesheet' href='css/speach.css'>
+    <link rel='stylesheet' href='css/sprites.css'>
+    <link rel='stylesheet' href='css/emo.css'>
+    <link rel='stylesheet' href='css/emo2.css'>
+    <link rel="stylesheet" href="dropdown.css" type="text/css" />
+
+
+    <script type='text/javascript' src='menuemo.js'></script>
+    <script type="text/javascript" src="dropdown.js"></script>
+    <script type="text/javascript" src="moment-with-langs.min.js"></script>
+    <script type="text/javascript" src="sha256.js"></script>
+    <script type="text/javascript" src="md5.js"></script>
+    <script type="text/javascript" src="lib-typedarrays-min.js"></script>
+
+</head>
+<body class='app'>
+<section id='splash' data-transition='slide'>
+    <article id='splash' data-transition='slide' class='active'>
+        <div class="splashfirst"  align="center">
+            <h1>ConnectA2</h1>
+            <h2>making happy talks</h2>
+            <div align="center"><br/><h1>:-)</h1></div>
+        </div>
+    </article>
+</section>
+<section id="welcome" data-transition="slide">
+    <div>
+        <h1>ConnectA2 <br />says HELLO</h1>
+        <h2>Conditions</h2>
+        <iframe id="myframe" src="conditions.htm" height="80%" style="width:100%"></iframe>
+        <br />
+    </div>
+    <a href="#login" id="agree" name="agree" data-router="section" class="agree">YES, I agree</a>
+</section>
+<section id="login" data-transition="slide">
+    <article id="login" class="active">
+        <form id="ttt">
+            <h1>Introduce a nickname and your telephone number</h1>
+            <input id="nickname" type="text" name="nickname" value="" placeholder="nickname" class="nopretend" style="width:95%" />
+            <label class="select">
+                <select id="country" class="custom">
+                    <option value="00" selected="selected">Country</option>
+                    <option value="93">Afghanistan</option>
+                    <option value="355">Albania</option>
+                    <option value="213">Algeria</option>
+                    <option value="376">Andorra</option>
+                    <option value="244">Angola</option>
+                    <option value="1">Anguilla</option>
+                    <option value="6721">Antarctica (Australian bases)</option>
+                    <option value="1">Antigua and Barbuda</option>
+                    <option value="549">Argentina</option>
+                    <option value="374">Armenia</option>
+                    <option value="297">Aruba</option>
+                    <option value="247">Ascension</option>
+                    <option value="61">Australia</option>
+                    <option value="43">Austria</option>
+                    <option value="994">Azerbaijan</option>
+                    <option value="1">Bahamas</option>
+                    <option value="973">Bahrain</option>
+                    <option value="880">Bangladesh</option>
+                    <option value="1">Barbados</option>
+                    <option value="375">Belarus</option>
+                    <option value="32">Belgium</option>
+                    <option value="501">Belize</option>
+                    <option value="229">Benin</option>
+                    <option value="1">Bermuda</option>
+                    <option value="975">Bhutan</option>
+                    <option value="591">Bolivia</option>
+                    <option value="387">Bosnia and Herzegovina</option>
+                    <option value="267">Botswana</option>
+                    <option value="55">Brazil</option>
+                    <option value="246">British Indian Ocean Territory</option>
+                    <option value="1">British Virgin Islands</option>
+                    <option value="673">Brunei</option>
+                    <option value="359">Bulgaria</option>
+                    <option value="226">Burkina Faso</option>
+                    <option value="257">Burundi</option>
+                    <option value="855">Cambodia</option>
+                    <option value="237">Cameroon</option>
+                    <option value="1">Canada</option>
+                    <option value="238">Cape Verde</option>
+                    <option value="1">Cayman Islands</option>
+                    <option value="236">Central African Republic</option>
+                    <option value="235">Chad</option>
+                    <option value="56">Chile</option>
+                    <option value="86">China</option>
+                    <option value="57">Colombia</option>
+                    <option value="269">Comoros</option>
+                    <option value="243">Democratic Republic of the Congo</option>
+                    <option value="242">Republic of the Congo</option>
+                    <option value="682">Cook Islands</option>
+                    <option value="506">Costa Rica</option>
+                    <option value="712">Cote d'Ivoire</option>
+                    <option value="385">Croatia</option>
+                    <option value="53">Cuba</option>
+                    <option value="357">Cyprus</option>
+                    <option value="420">Czech Republic</option>
+                    <option value="45">Denmark</option>
+                    <option value="253">Djibouti</option>
+                    <option value="1">Dominica</option>
+                    <option value="1">Dominican Republic</option>
+                    <option value="670">East Timor</option>
+                    <option value="593">Ecuador</option>
+                    <option value="20">Egypt</option>
+                    <option value="503">El Salvador</option>
+                    <option value="240">Equatorial Guinea</option>
+                    <option value="291">Eritrea</option>
+                    <option value="372">Estonia</option>
+                    <option value="251">Ethiopia</option>
+                    <option value="500">Falkland Islands</option>
+                    <option value="298">Faroe Islands</option>
+                    <option value="679">Fiji</option>
+                    <option value="358">Finland</option>
+                    <option value="33">France</option>
+                    <option value="594">French Guiana</option>
+                    <option value="689">French Polynesia</option>
+                    <option value="241">Gabon</option>
+                    <option value="220">Gambia</option>
+                    <option value="970">Gaza Strip</option>
+                    <option value="995">Georgia</option>
+                    <option value="49">Germany</option>
+                    <option value="233">Ghana</option>
+                    <option value="350">Gibraltar</option>
+                    <option value="30">Greece</option>
+                    <option value="299">Greenland</option>
+                    <option value="1">Grenada</option>
+                    <option value="590">Guadeloupe</option>
+                    <option value="1">Guam</option>
+                    <option value="502">Guatemala</option>
+                    <option value="224">Guinea</option>
+                    <option value="245">Guinea-Bissau</option>
+                    <option value="592">Guyana</option>
+                    <option value="509">Haiti</option>
+                    <option value="504">Honduras</option>
+                    <option value="852">Hong Kong</option>
+                    <option value="36">Hungary</option>
+                    <option value="354">Iceland</option>
+                    <option value="91">India</option>
+                    <option value="62">Indonesia</option>
+                    <option value="964">Iraq</option>
+                    <option value="98">Iran</option>
+                    <option value="353">Ireland (Eire)</option>
+                    <option value="972">Israel</option>
+                    <option value="39">Italy</option>
+                    <option value="1">Jamaica</option>
+                    <option value="81">Japan</option>
+                    <option value="962">Jordan</option>
+                    <option value="7">Kazakhstan</option>
+                    <option value="254">Kenya</option>
+                    <option value="686">Kiribati</option>
+                    <option value="965">Kuwait</option>
+                    <option value="996">Kyrgyzstan</option>
+                    <option value="856">Laos</option>
+                    <option value="371">Latvia</option>
+                    <option value="961">Lebanon</option>
+                    <option value="266">Lesotho</option>
+                    <option value="231">Liberia</option>
+                    <option value="218">Libya</option>
+                    <option value="423">Liechtenstein</option>
+                    <option value="370">Lithuania</option>
+                    <option value="352">Luxembourg</option>
+                    <option value="853">Macau</option>
+                    <option value="389">Republic of Macedonia</option>
+                    <option value="261">Madagascar</option>
+                    <option value="265">Malawi</option>
+                    <option value="60">Malaysia</option>
+                    <option value="960">Maldives</option>
+                    <option value="223">Mali</option>
+                    <option value="356">Malta</option>
+                    <option value="692">Marshall Islands</option>
+                    <option value="596">Martinique</option>
+                    <option value="222">Mauritania</option>
+                    <option value="230">Mauritius</option>
+                    <option value="262">Mayotte</option>
+                    <option value="521">Mexico</option>
+                    <option value="691">Federated States of Micronesia</option>
+                    <option value="373">Moldova</option>
+                    <option value="377">Monaco</option>
+                    <option value="976">Mongolia</option>
+                    <option value="382">Montenegro</option>
+                    <option value="1">Montserrat</option>
+                    <option value="212">Moroo</option>
+                    <option value="258">Mozambique</option>
+                    <option value="95">Myanmar</option>
+                    <option value="264">Namibia</option>
+                    <option value="674">Nauru</option>
+                    <option value="31">Netherlands</option>
+                    <option value="599">Netherlands Antilles</option>
+                    <option value="977">Nepal</option>
+                    <option value="687">New Caledonia</option>
+                    <option value="64">New Zealand</option>
+                    <option value="505">Nicaragua</option>
+                    <option value="227">Niger</option>
+                    <option value="234">Nigeria</option>
+                    <option value="683">Niue</option>
+                    <option value="6723">Norfolk Island</option>
+                    <option value="850">North Korea</option>
+                    <option value="28">Northern Ireland 44</option>
+                    <option value="1">Northern Mariana Islands</option>
+                    <option value="47">Norway</option>
+                    <option value="968">Oman</option>
+                    <option value="92">Pakistan</option>
+                    <option value="680">Palau</option>
+                    <option value="970">Palestine</option>
+                    <option value="507">Panama</option>
+                    <option value="675">Papua New Guinea</option>
+                    <option value="595">Paraguay</option>
+                    <option value="51">Peru</option>
+                    <option value="63">Philippines</option>
+                    <option value="48">Poland</option>
+                    <option value="351">Portugal</option>
+                    <option value="974">Qatar</option>
+                    <option value="262">Reunion</option>
+                    <option value="40">Romania</option>
+                    <option value="7">Russia</option>
+                    <option value="250">Rwanda</option>
+                    <option value="590">Saint-Barthelemy</option>
+                    <option value="290">Saint Helena</option>
+                    <option value="1">Saint Kitts and Nevis</option>
+                    <option value="1">Saint Lucia</option>
+                    <option value="590">Saint Martin (French side)</option>
+                    <option value="508">Saint Pierre and Miquelon</option>
+                    <option value="1">Saint Vincent and the Grenadines</option>
+                    <option value="685">Samoa</option>
+                    <option value="239">Sao Tome and Principe</option>
+                    <option value="966">Saudi Arabia</option>
+                    <option value="221">Senegal</option>
+                    <option value="381">Serbia</option>
+                    <option value="248">Seychelles</option>
+                    <option value="232">Sierra Leone</option>
+                    <option value="65">Singapore</option>
+                    <option value="421">Slovakia</option>
+                    <option value="386">Slovenia</option>
+                    <option value="677">Solomon Islands</option>
+                    <option value="252">Somalia</option>
+                    <option value="27">South Africa</option>
+                    <option value="82">South Korea</option>
+                    <option value="211">South Sudan</option>
+                    <option value="34">Spain</option>
+                    <option value="94">Sri Lanka</option>
+                    <option value="249">Sudan</option>
+                    <option value="597">Suriname</option>
+                    <option value="268">Swaziland</option>
+                    <option value="46">Sweden</option>
+                    <option value="41">Switzerland</option>
+                    <option value="963">Syria</option>
+                    <option value="886">Taiwan</option>
+                    <option value="992">Tajikistan</option>
+                    <option value="255">Tanzania</option>
+                    <option value="66">Thailand</option>
+                    <option value="228">Togo</option>
+                    <option value="690">Tokelau</option>
+                    <option value="676">Tonga</option>
+                    <option value="1">Trinidad and Tobago</option>
+                    <option value="216">Tunisia</option>
+                    <option value="90">Turkey</option>
+                    <option value="993">Turkmenistan</option>
+                    <option value="1">Turks and Caicos Islands</option>
+                    <option value="688">Tuvalu</option>
+                    <option value="256">Uganda</option>
+                    <option value="380">Ukraine</option>
+                    <option value="971">United Arab Emirates</option>
+                    <option value="44">United Kingdom</option>
+                    <option value="1">United States of America</option>
+                    <option value="598">Uruguay</option>
+                    <option value="998">Uzbekistan</option>
+                    <option value="678">Vanuatu</option>
+                    <option value="58">Venezuela</option>
+                    <option value="84">Vietnam</option>
+                    <option value="1">U.S. Virgin Islands</option>
+                    <option value="681">Wallis and Futuna</option>
+                    <option value="970">West Bank</option>
+                    <option value="967">Yemen</option>
+                    <option value="260">Zambia</option>
+                    <option value="263">Zimbabwe</option>
+                </select>
+            </label>
+            <input id="codigo" type="tel" name="ctelf" value="" class="nopretend" style="width:14%;float:left;text-align:center" disabled />
+            <input id="telefono" type="tel" name="telf" value="" placeholder="phone number" class="nopretend" style="width:75%;float:left" />
+            <br/><br/><br/><br/>
+            <div class="network"><h2><img src="img/checkblueblankblock.png" />ConnectA2 NET trial</h2></div>
+            <div id="chekeaw" class="network"><h2><img id="checkw" src="img/checkblueblank.png" />Whatsapp NET experimental</h2></div>
+            <div id="notification" style="visibility:hidden;display:none;font-size:0,3em">In order to protect your mobile number, please consider to use a virtual number</div>
+            <div class="wordwrap" style="float:left;width:45%;text-align:center;color:blue;height:40px;padding:15px;" id="countup"></div>
+            <button class="ok" style="float:right">REGISTER</button>
+        </form>
+    </article>
+</section>
+<section id='confirma' data-transition="slide">
+    <article id="confirma" class='active'>
+        <form>
+            <h1>Now, you have to enter the code that you will receive in a SMS</h1>
+            <input id="mcodigo" value="" type="tel" name="user" placeholder="Code" style="width:95%" class="nopretend" />
+            <br/>
+            <br/>
+            <button id="confirBtn" class="ok">confirm code</button>
+            <br/><br/>
+            <div style="text-align:center"><span id="waitsms">Wait for SMS</span><span id="email" style="color:blue;text-decoration:underline"></span></div>
+            <div style="text-align:center;color:blue;height:40px;padding:15px;" id="countup2"></div>
+        </form>
+    </article>
+</section>
+<section id='main' data-transition='slide'>
+    <header id="titulom" data-title=''>
+        <span class='showbar' data-show='na'></span>
+        <span class='status'><!--b>Version 009 / RC1</b--></span>
+        <nav>
+            <!-- a href='#me' data-router='article' data-title='Me' data-icon='user' class='left'></a -->
+            <a href='#' id='refreshc' data-router='article' data-title='Contacts' data-icon='down' class='right'></a>
+            <!-- a href='#chats' data-router='article' data-title='Chats' data-icon='message' class='left active'><span class='totalUnread'></span></a -->
+            <a href='#' id='menubtn' data-title='Options' data-icon='menu' class='left' style='font-size:1.6em'>CHATS</a>
+        </nav>
+    </header>
+    <article id="chats" class='active list scroll'>
+        <dl class="dropdown" id="menu1">
+            <dt id="one-ddheader"></dt>
+            <dd id="one-ddcontent" style="display:none;">
+                <div>
+                    <div><a id="menu01" href="#" data-icon='user' class="menui">&nbsp;&nbsp;New chat</a></div>
+                    <div><a id="menu02" href="#" data-icon='users' class="menui">&nbsp;&nbsp;New group</a></div>
+                    <div><a id="menu03" href="#" data-icon='star' class="menui">&nbsp;&nbsp;Profile</a></div>
+                    <div><a id="menu04" href="#" data-icon='settings' class="menui">&nbsp;&nbsp;Config</a></div>
+                    <div><a id="menu05" href="#" data-icon='info' class="menui">&nbsp;&nbsp;About us</a></div>
+                </div>
+            </dd>
+        </dl>
+        <div id="chats2">
+         <ul>
+
+        </ul>
+        </div>
+    </article>
+    <article id='contacts' class='list scroll'>
+        <div>
+        <ul id="contactlist">
+        </ul>
+        </div>
+    </article>
+    <article id='me'>
+    </article>
+</section>
+<section id='chat' data-transition='slide'>
+    <header>
+        <a href='#options' data-title='Options' data-icon='left' class='left' style='font-size:1.6em'><img id='chatid2' src='fotos/avatar.png' /></a>
+        <span class='avatar'></span>
+        <span class="title centered"></span>
+        <span class='totalUnread'></span>
+        <span class='showbar' data-show='na'></span>
+        <span class='name' id="idalias"></span>
+        <span class='status' id="idstatus"></span>
+        <span class='show'></span>
+        <nav>
+            <a href='#' id='umenu' data-router='article' data-icon='down' class='right'></a>
+        </nav>
+
+    </header>
+    <article id='chat' class='active'>
+        <dl class="dropdown" id="menu2">
+            <dt id="two-ddheader"></dt>
+            <dd id="two-ddcontent" style="display:none;">
+                <div>
+                    <div><a id="umenu01" href="#" data-icon='camera' class="menui">&nbsp;&nbsp;Send photo</a></div>
+                    <div><a id="umenu02" href="#" data-icon='picture' class="menui">&nbsp;&nbsp;Send video</a></div>
+                    <div><a id="umenu03" href="#" data-icon='music' class="menui">&nbsp;&nbsp;Send audio</a></div>
+                    <!-- div><a id="umenu04" href="#" data-icon='map' class="menui">&nbsp;&nbsp;Send location</a></div -->
+                    <!-- div><a id="umenu05" href="#" data-icon='clock' class="menui">&nbsp;&nbsp;2 players game</a></div -->
+                    <!-- div><a id="umenu06" href="#" data-icon='phone' class="menui">&nbsp;&nbsp;free voice call</a></div -->
+                </div>
+            </dd>
+        </dl>
+        <div id="chataux" style="visibility:visible;display:none"></div>
+        <div id="contenido" class="contenido" style="height:340px;width:100%;overflow:scroll;">
+            <ul id='data' class='paper'>
+
+            </ul>
+            </div>
+        <div id='footbox' class="footbox" style="border-bottom:0px;padding-bottom:0px;margin-bottom:0px">
+            <div id='typing'>Typing...</div>
+            <button id='emo' class='recommend' type='send'></button>
+            <button id='say' class='recommend' type='send'></button>
+            <div id='text' style="margin-bottom:.5rem" contenteditable></div>
+            <div class="emomenu" id="emomenu" style="height:0px;width:0px;margin:0px">
+                <div style="position:absolute;top:3rem;height:0px;border-top:0px;padding-top:7px">
+                    <div class="frameA" style="width:2.5rem;height:1.9rem;text-align:center;padding-top:.3rem"><img src="emo/01_smile.png" /></div>
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <div class="frameB" style="width:2.5rem;height:1.9rem;text-align:center;padding-top:.3rem"><img src="emo/02_flor.png" /></div>
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <div class="frameC" style="width:2.5rem;height:1.9rem;text-align:center;padding-top:.3rem"><img src="emo/03_campana.png" /></div>
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <div class="frameD" style="width:2.5rem;height:1.9rem;text-align:center;padding-top:.3rem"><img src="emo/04_coche.png" /></div>
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <div class="frameE" style="width:2.5rem;height:1.9rem;text-align:center;padding-top:.3rem"><img src="emo/05_simbolo.png" /></div>
+                </div>
+                <div id="emoimg" style="position:absolute;left:3rem;top:3.5rem;height:0px;overflow:auto;padding-right:20px;border-bottom:0px;padding-bottom:0px;margin-bottom:0px">
+                    <div style="float:left;width:100%;height:0px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <img src="emo/frame1.png" usemap="#mapa01" />
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <img src="emo/frame2.png" usemap="#mapa02" />
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <img src="emo/frame3.png" usemap="#mapa03" />
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <img src="emo/frame4.png" usemap="#mapa04" />
+                    <div style="float:left;width:100%;height:1px;padding:0px;border:0px;margin:0px;background-color:#888888">&nbsp;</div>
+                    <img src="emo/frame5.png" usemap="#mapa05" />
+                </div>
+
+                <map name="mapa01">
+                    <area data-emo='001' data-chari='1F618' class='emomapa' shape='rect' coords='0,0,35,35'>
+                    <area data-emo='002' data-chari='1F61A' class='emomapa' shape='rect' coords='36,0,70,35'>
+                    <area data-emo='003' data-chari='1F617' class='emomapa' shape='rect' coords='71,0,105,35'>
+                    <area data-emo='004' data-chari='1F619' class='emomapa' shape='rect' coords='106,0,140,35'>
+                    <area data-emo='005' data-chari='1F61C' class='emomapa' shape='rect' coords='141,0,175,35'>
+                    <area data-emo='006' data-chari='1F61D' class='emomapa' shape='rect' coords='176,0,210,35'>
+                    <area data-emo='007' data-chari='1F61B' class='emomapa' shape='rect' coords='211,0,245,35'>
+                    <area data-emo='008' data-chari='1F604' class='emomapa' shape='rect' coords='0,36,35,71'>
+                    <area data-emo='009' data-chari='1F603' class='emomapa' shape='rect' coords='36,36,70,71'>
+                    <area data-emo='010' data-chari='1F600' class='emomapa' shape='rect' coords='71,36,105,71'>
+                    <area data-emo='011' data-chari='1F60A' class='emomapa' shape='rect' coords='106,36,140,71'>
+                    <area data-emo='012' data-chari='263A' class='emomapa' shape='rect' coords='141,36,175,71'>
+                    <area data-emo='013' data-chari='1F609' class='emomapa' shape='rect' coords='176,36,210,71'>
+                    <area data-emo='014' data-chari='1F60D' class='emomapa' shape='rect' coords='211,36,245,71'>
+                    <area data-emo='015' data-chari='1F633' class='emomapa' shape='rect' coords='0,72,35,107'>
+                    <area data-emo='016' data-chari='1F601' class='emomapa' shape='rect' coords='36,72,70,107'>
+                    <area data-emo='017' data-chari='1F614' class='emomapa' shape='rect' coords='71,72,105,107'>
+                    <area data-emo='018' data-chari='1F60C' class='emomapa' shape='rect' coords='106,72,140,107'>
+                    <area data-emo='019' data-chari='1F612' class='emomapa' shape='rect' coords='141,72,175,107'>
+                    <area data-emo='020' data-chari='1F61E' class='emomapa' shape='rect' coords='176,72,210,107'>
+                    <area data-emo='021' data-chari='1F623' class='emomapa' shape='rect' coords='211,72,245,107'>
+                    <area data-emo='022' data-chari='1F622' class='emomapa' shape='rect' coords='0,108,35,143'>
+                    <area data-emo='023' data-chari='1F602' class='emomapa' shape='rect' coords='36,108,70,143'>
+                    <area data-emo='024' data-chari='1F62D' class='emomapa' shape='rect' coords='71,108,105,143'>
+                    <area data-emo='025' data-chari='1F62A' class='emomapa' shape='rect' coords='106,108,140,143'>
+                    <area data-emo='026' data-chari='1F625' class='emomapa' shape='rect' coords='141,108,175,143'>
+                    <area data-emo='027' data-chari='1F630' class='emomapa' shape='rect' coords='176,108,210,143'>
+                    <area data-emo='028' data-chari='1F605' class='emomapa' shape='rect' coords='211,108,245,143'>
+                    <area data-emo='029' data-chari='1F613' class='emomapa' shape='rect' coords='0,144,35,179'>
+                    <area data-emo='030' data-chari='1F629' class='emomapa' shape='rect' coords='36,144,70,179'>
+                    <area data-emo='031' data-chari='1F62B' class='emomapa' shape='rect' coords='71,144,105,179'>
+                    <area data-emo='032' data-chari='1F628' class='emomapa' shape='rect' coords='106,144,140,179'>
+                    <area data-emo='033' data-chari='1F631' class='emomapa' shape='rect' coords='141,144,175,179'>
+                    <area data-emo='034' data-chari='1F620' class='emomapa' shape='rect' coords='176,144,210,179'>
+                    <area data-emo='035' data-chari='1F621' class='emomapa' shape='rect' coords='211,144,245,179'>
+                    <area data-emo='036' data-chari='1F624' class='emomapa' shape='rect' coords='0,180,35,215'>
+                    <area data-emo='037' data-chari='1F616' class='emomapa' shape='rect' coords='36,180,70,215'>
+                    <area data-emo='038' data-chari='1F606' class='emomapa' shape='rect' coords='71,180,105,215'>
+                    <area data-emo='039' data-chari='1F60B' class='emomapa' shape='rect' coords='106,180,140,215'>
+                    <area data-emo='040' data-chari='1F637' class='emomapa' shape='rect' coords='141,180,175,215'>
+                    <area data-emo='041' data-chari='1F60E' class='emomapa' shape='rect' coords='176,180,210,215'>
+                    <area data-emo='042' data-chari='1F634' class='emomapa' shape='rect' coords='211,180,245,215'>
+                    <area data-emo='043' data-chari='1F635' class='emomapa' shape='rect' coords='0,216,35,251'>
+                    <area data-emo='044' data-chari='1F632' class='emomapa' shape='rect' coords='36,216,70,251'>
+                    <area data-emo='045' data-chari='1F61F' class='emomapa' shape='rect' coords='71,216,105,251'>
+                    <area data-emo='046' data-chari='1F626' class='emomapa' shape='rect' coords='106,216,140,251'>
+                    <area data-emo='047' data-chari='1F627' class='emomapa' shape='rect' coords='141,216,175,251'>
+                    <area data-emo='048' data-chari='1F608' class='emomapa' shape='rect' coords='176,216,210,251'>
+                    <area data-emo='049' data-chari='1F47F' class='emomapa' shape='rect' coords='211,216,245,251'>
+                    <area data-emo='050' data-chari='1F62E' class='emomapa' shape='rect' coords='0,252,35,287'>
+                    <area data-emo='051' data-chari='1F62C' class='emomapa' shape='rect' coords='36,252,70,287'>
+                    <area data-emo='052' data-chari='1F610' class='emomapa' shape='rect' coords='71,252,105,287'>
+                    <area data-emo='053' data-chari='1F615' class='emomapa' shape='rect' coords='106,252,140,287'>
+                    <area data-emo='054' data-chari='1F62F' class='emomapa' shape='rect' coords='141,252,175,287'>
+                    <area data-emo='055' data-chari='1F636' class='emomapa' shape='rect' coords='176,252,210,287'>
+                    <area data-emo='056' data-chari='1F607' class='emomapa' shape='rect' coords='211,252,245,287'>
+                    <area data-emo='057' data-chari='1F60F' class='emomapa' shape='rect' coords='0,288,35,323'>
+                    <area data-emo='058' data-chari='1F611' class='emomapa' shape='rect' coords='36,288,70,323'>
+                    <area data-emo='059' data-chari='1F472' class='emomapa' shape='rect' coords='71,288,105,323'>
+                    <area data-emo='060' data-chari='1F473' class='emomapa' shape='rect' coords='106,288,140,323'>
+                    <area data-emo='061' data-chari='1F46E' class='emomapa' shape='rect' coords='141,288,175,323'>
+                    <area data-emo='062' data-chari='1F477' class='emomapa' shape='rect' coords='176,288,210,323'>
+                    <area data-emo='063' data-chari='1F482' class='emomapa' shape='rect' coords='211,288,245,323'>
+                    <area data-emo='064' data-chari='1F476' class='emomapa' shape='rect' coords='0,324,35,359'>
+                    <area data-emo='065' data-chari='1F466' class='emomapa' shape='rect' coords='36,324,70,359'>
+                    <area data-emo='066' data-chari='1F467' class='emomapa' shape='rect' coords='71,324,105,359'>
+                    <area data-emo='067' data-chari='1F468' class='emomapa' shape='rect' coords='106,324,140,359'>
+                    <area data-emo='068' data-chari='1F469' class='emomapa' shape='rect' coords='141,324,175,359'>
+                    <area data-emo='069' data-chari='1F474' class='emomapa' shape='rect' coords='176,324,210,359'>
+                    <area data-emo='070' data-chari='1F475' class='emomapa' shape='rect' coords='211,324,245,359'>
+                    <area data-emo='071' data-chari='1F471' class='emomapa' shape='rect' coords='0,360,35,395'>
+                    <area data-emo='072' data-chari='1F47C' class='emomapa' shape='rect' coords='36,360,70,395'>
+                    <area data-emo='073' data-chari='1F478' class='emomapa' shape='rect' coords='71,360,105,395'>
+                    <area data-emo='074' data-chari='1F63A' class='emomapa' shape='rect' coords='106,360,140,395'>
+                    <area data-emo='075' data-chari='1F638' class='emomapa' shape='rect' coords='141,360,175,395'>
+                    <area data-emo='076' data-chari='1F63B' class='emomapa' shape='rect' coords='176,360,210,395'>
+                    <area data-emo='077' data-chari='1F63D' class='emomapa' shape='rect' coords='211,360,245,395'>
+                    <area data-emo='078' data-chari='1F63C' class='emomapa' shape='rect' coords='0,396,35,431'>
+                    <area data-emo='079' data-chari='1F640' class='emomapa' shape='rect' coords='36,396,70,431'>
+                    <area data-emo='080' data-chari='1F63F' class='emomapa' shape='rect' coords='71,396,105,431'>
+                    <area data-emo='081' data-chari='1F639' class='emomapa' shape='rect' coords='106,396,140,431'>
+                    <area data-emo='082' data-chari='1F63E' class='emomapa' shape='rect' coords='141,396,175,431'>
+                    <area data-emo='083' data-chari='1F479' class='emomapa' shape='rect' coords='176,396,210,431'>
+                    <area data-emo='084' data-chari='1F47A' class='emomapa' shape='rect' coords='211,396,245,431'>
+                    <area data-emo='085' data-chari='1F648' class='emomapa' shape='rect' coords='0,432,35,467'>
+                    <area data-emo='086' data-chari='1F649' class='emomapa' shape='rect' coords='36,432,70,467'>
+                    <area data-emo='087' data-chari='1F64A' class='emomapa' shape='rect' coords='71,432,105,467'>
+                    <area data-emo='088' data-chari='1F480' class='emomapa' shape='rect' coords='106,432,140,467'>
+                    <area data-emo='089' data-chari='1F47D' class='emomapa' shape='rect' coords='141,432,175,467'>
+                    <area data-emo='090' data-chari='1F4A9' class='emomapa' shape='rect' coords='176,432,210,467'>
+                    <area data-emo='091' data-chari='1F525' class='emomapa' shape='rect' coords='211,432,245,467'>
+                    <area data-emo='092' data-chari='2728' class='emomapa' shape='rect' coords='0,468,35,503'>
+                    <area data-emo='093' data-chari='1F31F' class='emomapa' shape='rect' coords='36,468,70,503'>
+                    <area data-emo='094' data-chari='1F4AB' class='emomapa' shape='rect' coords='71,468,105,503'>
+                    <area data-emo='095' data-chari='1F4A5' class='emomapa' shape='rect' coords='106,468,140,503'>
+                    <area data-emo='096' data-chari='1F4A2' class='emomapa' shape='rect' coords='141,468,175,503'>
+                    <area data-emo='097' data-chari='1F4A6' class='emomapa' shape='rect' coords='176,468,210,503'>
+                    <area data-emo='098' data-chari='1F4A7' class='emomapa' shape='rect' coords='211,468,245,503'>
+                    <area data-emo='099' data-chari='1F4A4' class='emomapa' shape='rect' coords='0,504,35,539'>
+                    <area data-emo='100' data-chari='1F4A8' class='emomapa' shape='rect' coords='36,504,70,539'>
+                    <area data-emo='101' data-chari='1F442' class='emomapa' shape='rect' coords='71,504,105,539'>
+                    <area data-emo='102' data-chari='1F440' class='emomapa' shape='rect' coords='106,504,140,539'>
+                    <area data-emo='103' data-chari='1F443' class='emomapa' shape='rect' coords='141,504,175,539'>
+                    <area data-emo='104' data-chari='1F445' class='emomapa' shape='rect' coords='176,504,210,539'>
+                    <area data-emo='105' data-chari='1F444' class='emomapa' shape='rect' coords='211,504,245,539'>
+                    <area data-emo='106' data-chari='1F44D' class='emomapa' shape='rect' coords='0,540,35,575'>
+                    <area data-emo='107' data-chari='1F44E' class='emomapa' shape='rect' coords='36,540,70,575'>
+                    <area data-emo='108' data-chari='1F44C' class='emomapa' shape='rect' coords='71,540,105,575'>
+                    <area data-emo='109' data-chari='1F44A' class='emomapa' shape='rect' coords='106,540,140,575'>
+                    <area data-emo='110' data-chari='270A' class='emomapa' shape='rect' coords='141,540,175,575'>
+                    <area data-emo='111' data-chari='270C' class='emomapa' shape='rect' coords='176,540,210,575'>
+                    <area data-emo='112' data-chari='1F44B' class='emomapa' shape='rect' coords='211,540,245,575'>
+                    <area data-emo='113' data-chari='E012' class='emomapa' shape='rect' coords='0,576,35,611'>
+                    <area data-emo='114' data-chari='1F450' class='emomapa' shape='rect' coords='36,576,70,611'>
+                    <area data-emo='115' data-chari='1F446' class='emomapa' shape='rect' coords='71,576,105,611'>
+                    <area data-emo='116' data-chari='1F447' class='emomapa' shape='rect' coords='106,576,140,611'>
+                    <area data-emo='117' data-chari='1F449' class='emomapa' shape='rect' coords='141,576,175,611'>
+                    <area data-emo='118' data-chari='1F448' class='emomapa' shape='rect' coords='176,576,210,611'>
+                    <area data-emo='119' data-chari='1F64C' class='emomapa' shape='rect' coords='211,576,245,611'>
+                    <area data-emo='120' data-chari='1F64F' class='emomapa' shape='rect' coords='0,612,35,647'>
+                    <area data-emo='121' data-chari='261D' class='emomapa' shape='rect' coords='36,612,70,647'>
+                    <area data-emo='122' data-chari='1F44F' class='emomapa' shape='rect' coords='71,612,105,647'>
+                    <area data-emo='123' data-chari='1F4AA' class='emomapa' shape='rect' coords='106,612,140,647'>
+                    <area data-emo='124' data-chari='1F6B6' class='emomapa' shape='rect' coords='141,612,175,647'>
+                    <area data-emo='125' data-chari='1F3C3' class='emomapa' shape='rect' coords='176,612,210,647'>
+                    <area data-emo='126' data-chari='1F483' class='emomapa' shape='rect' coords='211,612,245,647'>
+                    <area data-emo='127' data-chari='1F46B' class='emomapa' shape='rect' coords='0,648,35,683'>
+                    <area data-emo='128' data-chari='1F46A' class='emomapa' shape='rect' coords='36,648,70,683'>
+                    <area data-emo='129' data-chari='1F46C' class='emomapa' shape='rect' coords='71,648,105,683'>
+                    <area data-emo='130' data-chari='1F46D' class='emomapa' shape='rect' coords='106,648,140,683'>
+                    <area data-emo='131' data-chari='1F48F' class='emomapa' shape='rect' coords='141,648,175,683'>
+                    <area data-emo='132' data-chari='1F491' class='emomapa' shape='rect' coords='176,648,210,683'>
+                    <area data-emo='133' data-chari='1F46F' class='emomapa' shape='rect' coords='211,648,245,683'>
+                    <area data-emo='134' data-chari='1F646' class='emomapa' shape='rect' coords='0,684,35,719'>
+                    <area data-emo='135' data-chari='1F645' class='emomapa' shape='rect' coords='36,684,70,719'>
+                    <area data-emo='136' data-chari='1F481' class='emomapa' shape='rect' coords='71,684,105,719'>
+                    <area data-emo='137' data-chari='1F64B' class='emomapa' shape='rect' coords='106,684,140,719'>
+                    <area data-emo='138' data-chari='1F486' class='emomapa' shape='rect' coords='141,684,175,719'>
+                    <area data-emo='139' data-chari='1F487' class='emomapa' shape='rect' coords='176,684,210,719'>
+                    <area data-emo='140' data-chari='1F485' class='emomapa' shape='rect' coords='211,684,245,719'>
+                    <area data-emo='141' data-chari='1F470' class='emomapa' shape='rect' coords='0,720,35,755'>
+                    <area data-emo='142' data-chari='1F64E' class='emomapa' shape='rect' coords='36,720,70,755'>
+                    <area data-emo='143' data-chari='1F64D' class='emomapa' shape='rect' coords='71,720,105,755'>
+                    <area data-emo='144' data-chari='1F647' class='emomapa' shape='rect' coords='106,720,140,755'>
+                    <area data-emo='145' data-chari='1F3A9' class='emomapa' shape='rect' coords='141,720,175,755'>
+                    <area data-emo='146' data-chari='1F451' class='emomapa' shape='rect' coords='176,720,210,755'>
+                    <area data-emo='147' data-chari='1F452' class='emomapa' shape='rect' coords='211,720,245,755'>
+                    <area data-emo='148' data-chari='1F45F' class='emomapa' shape='rect' coords='0,756,35,791'>
+                    <area data-emo='149' data-chari='1F45E' class='emomapa' shape='rect' coords='36,756,70,791'>
+                    <area data-emo='150' data-chari='1F461' class='emomapa' shape='rect' coords='71,756,105,791'>
+                    <area data-emo='151' data-chari='1F460' class='emomapa' shape='rect' coords='106,756,140,791'>
+                    <area data-emo='152' data-chari='1F462' class='emomapa' shape='rect' coords='141,756,175,791'>
+                    <area data-emo='153' data-chari='1F455' class='emomapa' shape='rect' coords='176,756,210,791'>
+                    <area data-emo='154' data-chari='1F454' class='emomapa' shape='rect' coords='211,756,245,791'>
+                    <area data-emo='155' data-chari='1F45A' class='emomapa' shape='rect' coords='0,792,35,827'>
+                    <area data-emo='156' data-chari='1F457' class='emomapa' shape='rect' coords='36,792,70,827'>
+                    <area data-emo='157' data-chari='1F3BD' class='emomapa' shape='rect' coords='71,792,105,827'>
+                    <area data-emo='158' data-chari='1F456' class='emomapa' shape='rect' coords='106,792,140,827'>
+                    <area data-emo='159' data-chari='1F458' class='emomapa' shape='rect' coords='141,792,175,827'>
+                    <area data-emo='160' data-chari='1F459' class='emomapa' shape='rect' coords='176,792,210,827'>
+                    <area data-emo='161' data-chari='1F4BC' class='emomapa' shape='rect' coords='211,792,245,827'>
+                    <area data-emo='162' data-chari='1F45C' class='emomapa' shape='rect' coords='0,828,35,863'>
+                    <area data-emo='163' data-chari='1F45D' class='emomapa' shape='rect' coords='36,828,70,863'>
+                    <area data-emo='164' data-chari='1F45B' class='emomapa' shape='rect' coords='71,828,105,863'>
+                    <area data-emo='165' data-chari='1F453' class='emomapa' shape='rect' coords='106,828,140,863'>
+                    <area data-emo='166' data-chari='1F380' class='emomapa' shape='rect' coords='141,828,175,863'>
+                    <area data-emo='167' data-chari='1F302' class='emomapa' shape='rect' coords='176,828,210,863'>
+                    <area data-emo='168' data-chari='1F484' class='emomapa' shape='rect' coords='211,828,245,863'>
+                    <area data-emo='169' data-chari='1F49B' class='emomapa' shape='rect' coords='0,864,35,899'>
+                    <area data-emo='170' data-chari='1F499' class='emomapa' shape='rect' coords='36,864,70,899'>
+                    <area data-emo='171' data-chari='1F49C' class='emomapa' shape='rect' coords='71,864,105,899'>
+                    <area data-emo='172' data-chari='1F49A' class='emomapa' shape='rect' coords='106,864,140,899'>
+                    <area data-emo='173' data-chari='2764' class='emomapa' shape='rect' coords='141,864,175,899'>
+                    <area data-emo='174' data-chari='1F494' class='emomapa' shape='rect' coords='176,864,210,899'>
+                    <area data-emo='175' data-chari='1F497' class='emomapa' shape='rect' coords='211,864,245,899'>
+                    <area data-emo='176' data-chari='1F493' class='emomapa' shape='rect' coords='0,900,35,935'>
+                    <area data-emo='177' data-chari='1F495' class='emomapa' shape='rect' coords='36,900,70,935'>
+                    <area data-emo='178' data-chari='1F496' class='emomapa' shape='rect' coords='71,900,105,935'>
+                    <area data-emo='179' data-chari='1F49E' class='emomapa' shape='rect' coords='106,900,140,935'>
+                    <area data-emo='180' data-chari='1F498' class='emomapa' shape='rect' coords='141,900,175,935'>
+                    <area data-emo='181' data-chari='1F48C' class='emomapa' shape='rect' coords='176,900,210,935'>
+                    <area data-emo='182' data-chari='1F48B' class='emomapa' shape='rect' coords='211,900,245,935'>
+                    <area data-emo='183' data-chari='1F48D' class='emomapa' shape='rect' coords='0,936,35,971'>
+                    <area data-emo='184' data-chari='1F48E' class='emomapa' shape='rect' coords='36,936,70,971'>
+                    <area data-emo='185' data-chari='1F464' class='emomapa' shape='rect' coords='71,936,105,971'>
+                    <area data-emo='186' data-chari='1F465' class='emomapa' shape='rect' coords='106,936,140,971'>
+                    <area data-emo='187' data-chari='1F4AC' class='emomapa' shape='rect' coords='141,936,175,971'>
+                    <area data-emo='188' data-chari='1F463' class='emomapa' shape='rect' coords='176,936,210,971'>
+                    <area data-emo='189' data-chari='1F4AD' class='emomapa' shape='rect' coords='211,936,245,971'>
+                </map>
+                <map name="mapa02">
+                    <area data-emo='190' data-chari='1F436' class='emomapa' shape='rect' coords='0,0,35,35'>
+                    <area data-emo='191' data-chari='1F43A' class='emomapa' shape='rect' coords='36,0,70,35'>
+                    <area data-emo='192' data-chari='1F431' class='emomapa' shape='rect' coords='71,0,105,35'>
+                    <area data-emo='193' data-chari='1F42D' class='emomapa' shape='rect' coords='106,0,140,35'>
+                    <area data-emo='194' data-chari='1F439' class='emomapa' shape='rect' coords='141,0,175,35'>
+                    <area data-emo='195' data-chari='1F430' class='emomapa' shape='rect' coords='176,0,210,35'>
+                    <area data-emo='196' data-chari='1F438' class='emomapa' shape='rect' coords='211,0,245,35'>
+                    <area data-emo='197' data-chari='1F42F' class='emomapa' shape='rect' coords='0,36,35,71'>
+                    <area data-emo='198' data-chari='1F428' class='emomapa' shape='rect' coords='36,36,70,71'>
+                    <area data-emo='199' data-chari='1F43B' class='emomapa' shape='rect' coords='71,36,105,71'>
+                    <area data-emo='200' data-chari='1F437' class='emomapa' shape='rect' coords='106,36,140,71'>
+                    <area data-emo='201' data-chari='1F43D' class='emomapa' shape='rect' coords='141,36,175,71'>
+                    <area data-emo='202' data-chari='1F42E' class='emomapa' shape='rect' coords='176,36,210,71'>
+                    <area data-emo='203' data-chari='1F417' class='emomapa' shape='rect' coords='211,36,245,71'>
+                    <area data-emo='204' data-chari='1F435' class='emomapa' shape='rect' coords='0,72,35,107'>
+                    <area data-emo='205' data-chari='1F412' class='emomapa' shape='rect' coords='36,72,70,107'>
+                    <area data-emo='206' data-chari='1F434' class='emomapa' shape='rect' coords='71,72,105,107'>
+                    <area data-emo='207' data-chari='1F411' class='emomapa' shape='rect' coords='106,72,140,107'>
+                    <area data-emo='208' data-chari='1F418' class='emomapa' shape='rect' coords='141,72,175,107'>
+                    <area data-emo='209' data-chari='1F43C' class='emomapa' shape='rect' coords='176,72,210,107'>
+                    <area data-emo='210' data-chari='1F427' class='emomapa' shape='rect' coords='211,72,245,107'>
+                    <area data-emo='211' data-chari='1F426' class='emomapa' shape='rect' coords='0,108,35,143'>
+                    <area data-emo='212' data-chari='1F424' class='emomapa' shape='rect' coords='36,108,70,143'>
+                    <area data-emo='213' data-chari='1F425' class='emomapa' shape='rect' coords='71,108,105,143'>
+                    <area data-emo='214' data-chari='1F423' class='emomapa' shape='rect' coords='106,108,140,143'>
+                    <area data-emo='215' data-chari='1F414' class='emomapa' shape='rect' coords='141,108,175,143'>
+                    <area data-emo='216' data-chari='1F40D' class='emomapa' shape='rect' coords='176,108,210,143'>
+                    <area data-emo='217' data-chari='1F422' class='emomapa' shape='rect' coords='211,108,245,143'>
+                    <area data-emo='218' data-chari='1F41B' class='emomapa' shape='rect' coords='0,144,35,179'>
+                    <area data-emo='219' data-chari='1F41D' class='emomapa' shape='rect' coords='36,144,70,179'>
+                    <area data-emo='220' data-chari='1F41C' class='emomapa' shape='rect' coords='71,144,105,179'>
+                    <area data-emo='221' data-chari='1F41E' class='emomapa' shape='rect' coords='106,144,140,179'>
+                    <area data-emo='222' data-chari='1F40C' class='emomapa' shape='rect' coords='141,144,175,179'>
+                    <area data-emo='223' data-chari='1F419' class='emomapa' shape='rect' coords='176,144,210,179'>
+                    <area data-emo='224' data-chari='1F41A' class='emomapa' shape='rect' coords='211,144,245,179'>
+                    <area data-emo='225' data-chari='1F420' class='emomapa' shape='rect' coords='0,180,35,215'>
+                    <area data-emo='226' data-chari='1F41F' class='emomapa' shape='rect' coords='36,180,70,215'>
+                    <area data-emo='227' data-chari='1F42C' class='emomapa' shape='rect' coords='71,180,105,215'>
+                    <area data-emo='228' data-chari='1F433' class='emomapa' shape='rect' coords='106,180,140,215'>
+                    <area data-emo='229' data-chari='1F40B' class='emomapa' shape='rect' coords='141,180,175,215'>
+                    <area data-emo='230' data-chari='1F404' class='emomapa' shape='rect' coords='176,180,210,215'>
+                    <area data-emo='231' data-chari='1F40F' class='emomapa' shape='rect' coords='211,180,245,215'>
+                    <area data-emo='232' data-chari='1F400' class='emomapa' shape='rect' coords='0,216,35,251'>
+                    <area data-emo='233' data-chari='1F403' class='emomapa' shape='rect' coords='36,216,70,251'>
+                    <area data-emo='234' data-chari='1F405' class='emomapa' shape='rect' coords='71,216,105,251'>
+                    <area data-emo='235' data-chari='1F407' class='emomapa' shape='rect' coords='106,216,140,251'>
+                    <area data-emo='236' data-chari='1F409' class='emomapa' shape='rect' coords='141,216,175,251'>
+                    <area data-emo='237' data-chari='1F40E' class='emomapa' shape='rect' coords='176,216,210,251'>
+                    <area data-emo='238' data-chari='1F410' class='emomapa' shape='rect' coords='211,216,245,251'>
+                    <area data-emo='239' data-chari='1F413' class='emomapa' shape='rect' coords='0,252,35,287'>
+                    <area data-emo='240' data-chari='1F415' class='emomapa' shape='rect' coords='36,252,70,287'>
+                    <area data-emo='241' data-chari='1F416' class='emomapa' shape='rect' coords='71,252,105,287'>
+                    <area data-emo='242' data-chari='1F401' class='emomapa' shape='rect' coords='106,252,140,287'>
+                    <area data-emo='243' data-chari='1F402' class='emomapa' shape='rect' coords='141,252,175,287'>
+                    <area data-emo='244' data-chari='1F432' class='emomapa' shape='rect' coords='176,252,210,287'>
+                    <area data-emo='245' data-chari='1F421' class='emomapa' shape='rect' coords='211,252,245,287'>
+                    <area data-emo='246' data-chari='1F40A' class='emomapa' shape='rect' coords='0,288,35,323'>
+                    <area data-emo='247' data-chari='1F42B' class='emomapa' shape='rect' coords='36,288,70,323'>
+                    <area data-emo='248' data-chari='1F42A' class='emomapa' shape='rect' coords='71,288,105,323'>
+                    <area data-emo='249' data-chari='1F406' class='emomapa' shape='rect' coords='106,288,140,323'>
+                    <area data-emo='250' data-chari='1F408' class='emomapa' shape='rect' coords='141,288,175,323'>
+                    <area data-emo='251' data-chari='1F429' class='emomapa' shape='rect' coords='176,288,210,323'>
+                    <area data-emo='252' data-chari='1F43E' class='emomapa' shape='rect' coords='211,288,245,323'>
+                    <area data-emo='253' data-chari='1F490' class='emomapa' shape='rect' coords='0,324,35,359'>
+                    <area data-emo='254' data-chari='1F338' class='emomapa' shape='rect' coords='36,324,70,359'>
+                    <area data-emo='255' data-chari='1F337' class='emomapa' shape='rect' coords='71,324,105,359'>
+                    <area data-emo='256' data-chari='1F340' class='emomapa' shape='rect' coords='106,324,140,359'>
+                    <area data-emo='257' data-chari='1F339' class='emomapa' shape='rect' coords='141,324,175,359'>
+                    <area data-emo='258' data-chari='1F33B' class='emomapa' shape='rect' coords='176,324,210,359'>
+                    <area data-emo='259' data-chari='1F33A' class='emomapa' shape='rect' coords='211,324,245,359'>
+                    <area data-emo='260' data-chari='1F341' class='emomapa' shape='rect' coords='0,360,35,395'>
+                    <area data-emo='261' data-chari='1F343' class='emomapa' shape='rect' coords='36,360,70,395'>
+                    <area data-emo='262' data-chari='1F342' class='emomapa' shape='rect' coords='71,360,105,395'>
+                    <area data-emo='263' data-chari='1F33F' class='emomapa' shape='rect' coords='106,360,140,395'>
+                    <area data-emo='264' data-chari='1F33E' class='emomapa' shape='rect' coords='141,360,175,395'>
+                    <area data-emo='265' data-chari='1F344' class='emomapa' shape='rect' coords='176,360,210,395'>
+                    <area data-emo='266' data-chari='1F335' class='emomapa' shape='rect' coords='211,360,245,395'>
+                    <area data-emo='267' data-chari='1F334' class='emomapa' shape='rect' coords='0,396,35,431'>
+                    <area data-emo='268' data-chari='1F332' class='emomapa' shape='rect' coords='36,396,70,431'>
+                    <area data-emo='269' data-chari='1F333' class='emomapa' shape='rect' coords='71,396,105,431'>
+                    <area data-emo='270' data-chari='1F330' class='emomapa' shape='rect' coords='106,396,140,431'>
+                    <area data-emo='271' data-chari='1F331' class='emomapa' shape='rect' coords='141,396,175,431'>
+                    <area data-emo='272' data-chari='1F33C' class='emomapa' shape='rect' coords='176,396,210,431'>
+                    <area data-emo='273' data-chari='1F310' class='emomapa' shape='rect' coords='211,396,245,431'>
+                    <area data-emo='274' data-chari='1F31E' class='emomapa' shape='rect' coords='0,432,35,467'>
+                    <area data-emo='275' data-chari='1F31D' class='emomapa' shape='rect' coords='36,432,70,467'>
+                    <area data-emo='276' data-chari='1F31A' class='emomapa' shape='rect' coords='71,432,105,467'>
+                    <area data-emo='277' data-chari='1F311' class='emomapa' shape='rect' coords='106,432,140,467'>
+                    <area data-emo='278' data-chari='1F312' class='emomapa' shape='rect' coords='141,432,175,467'>
+                    <area data-emo='279' data-chari='1F313' class='emomapa' shape='rect' coords='176,432,210,467'>
+                    <area data-emo='280' data-chari='1F314' class='emomapa' shape='rect' coords='211,432,245,467'>
+                    <area data-emo='281' data-chari='1F315' class='emomapa' shape='rect' coords='0,468,35,503'>
+                    <area data-emo='282' data-chari='1F316' class='emomapa' shape='rect' coords='36,468,70,503'>
+                    <area data-emo='283' data-chari='1F317' class='emomapa' shape='rect' coords='71,468,105,503'>
+                    <area data-emo='284' data-chari='1F318' class='emomapa' shape='rect' coords='106,468,140,503'>
+                    <area data-emo='285' data-chari='1F31C' class='emomapa' shape='rect' coords='141,468,175,503'>
+                    <area data-emo='286' data-chari='1F31B' class='emomapa' shape='rect' coords='176,468,210,503'>
+                    <area data-emo='287' data-chari='1F319' class='emomapa' shape='rect' coords='211,468,245,503'>
+                    <area data-emo='288' data-chari='1F30D' class='emomapa' shape='rect' coords='0,504,35,539'>
+                    <area data-emo='289' data-chari='1F30E' class='emomapa' shape='rect' coords='36,504,70,539'>
+                    <area data-emo='290' data-chari='1F30F' class='emomapa' shape='rect' coords='71,504,105,539'>
+                    <area data-emo='291' data-chari='1F30B' class='emomapa' shape='rect' coords='106,504,140,539'>
+                    <area data-emo='292' data-chari='1F30C' class='emomapa' shape='rect' coords='141,504,175,539'>
+                    <area data-emo='293' data-chari='1F320' class='emomapa' shape='rect' coords='176,504,210,539'>
+                    <area data-emo='294' data-chari='2B50' class='emomapa' shape='rect' coords='211,504,245,539'>
+                    <area data-emo='295' data-chari='2600' class='emomapa' shape='rect' coords='0,540,35,575'>
+                    <area data-emo='296' data-chari='26C5' class='emomapa' shape='rect' coords='36,540,70,575'>
+                    <area data-emo='297' data-chari='2601' class='emomapa' shape='rect' coords='71,540,105,575'>
+                    <area data-emo='298' data-chari='26A1' class='emomapa' shape='rect' coords='106,540,140,575'>
+                    <area data-emo='299' data-chari='2614' class='emomapa' shape='rect' coords='141,540,175,575'>
+                    <area data-emo='300' data-chari='2744' class='emomapa' shape='rect' coords='176,540,210,575'>
+                    <area data-emo='301' data-chari='26C4' class='emomapa' shape='rect' coords='211,540,245,575'>
+                    <area data-emo='302' data-chari='1F300' class='emomapa' shape='rect' coords='0,576,35,611'>
+                    <area data-emo='303' data-chari='1F301' class='emomapa' shape='rect' coords='36,576,70,611'>
+                    <area data-emo='304' data-chari='1F308' class='emomapa' shape='rect' coords='71,576,105,611'>
+                    <area data-emo='305' data-chari='1F30A' class='emomapa' shape='rect' coords='106,576,140,611'>
+                </map>
+                <map name="mapa03">
+                    <area data-emo='306' data-chari='1F38D' class='emomapa' shape='rect' coords='0,0,35,35'>
+                    <area data-emo='307' data-chari='1F49D' class='emomapa' shape='rect' coords='36,0,70,35'>
+                    <area data-emo='308' data-chari='1F38E' class='emomapa' shape='rect' coords='71,0,105,35'>
+                    <area data-emo='309' data-chari='1F392' class='emomapa' shape='rect' coords='106,0,140,35'>
+                    <area data-emo='310' data-chari='1F393' class='emomapa' shape='rect' coords='141,0,175,35'>
+                    <area data-emo='311' data-chari='1F38F' class='emomapa' shape='rect' coords='176,0,210,35'>
+                    <area data-emo='312' data-chari='1F386' class='emomapa' shape='rect' coords='211,0,245,35'>
+                    <area data-emo='313' data-chari='1F387' class='emomapa' shape='rect' coords='0,36,35,71'>
+                    <area data-emo='314' data-chari='1F390' class='emomapa' shape='rect' coords='36,36,70,71'>
+                    <area data-emo='315' data-chari='1F391' class='emomapa' shape='rect' coords='71,36,105,71'>
+                    <area data-emo='316' data-chari='1F383' class='emomapa' shape='rect' coords='106,36,140,71'>
+                    <area data-emo='317' data-chari='1F47B' class='emomapa' shape='rect' coords='141,36,175,71'>
+                    <area data-emo='318' data-chari='1F385' class='emomapa' shape='rect' coords='176,36,210,71'>
+                    <area data-emo='319' data-chari='1F384' class='emomapa' shape='rect' coords='211,36,245,71'>
+                    <area data-emo='320' data-chari='1F381' class='emomapa' shape='rect' coords='0,72,35,107'>
+                    <area data-emo='321' data-chari='1F38B' class='emomapa' shape='rect' coords='36,72,70,107'>
+                    <area data-emo='322' data-chari='1F389' class='emomapa' shape='rect' coords='71,72,105,107'>
+                    <area data-emo='323' data-chari='1F38A' class='emomapa' shape='rect' coords='106,72,140,107'>
+                    <area data-emo='324' data-chari='1F388' class='emomapa' shape='rect' coords='141,72,175,107'>
+                    <area data-emo='325' data-chari='1F38C' class='emomapa' shape='rect' coords='176,72,210,107'>
+                    <area data-emo='326' data-chari='1F52E' class='emomapa' shape='rect' coords='211,72,245,107'>
+                    <area data-emo='327' data-chari='1F3A5' class='emomapa' shape='rect' coords='0,108,35,143'>
+                    <area data-emo='328' data-chari='1F4F7' class='emomapa' shape='rect' coords='36,108,70,143'>
+                    <area data-emo='329' data-chari='1F4F9' class='emomapa' shape='rect' coords='71,108,105,143'>
+                    <area data-emo='330' data-chari='1F4FC' class='emomapa' shape='rect' coords='106,108,140,143'>
+                    <area data-emo='331' data-chari='1F4BF' class='emomapa' shape='rect' coords='141,108,175,143'>
+                    <area data-emo='332' data-chari='1F4C0' class='emomapa' shape='rect' coords='176,108,210,143'>
+                    <area data-emo='333' data-chari='1F4BD' class='emomapa' shape='rect' coords='211,108,245,143'>
+                    <area data-emo='334' data-chari='1F4BE' class='emomapa' shape='rect' coords='0,144,35,179'>
+                    <area data-emo='335' data-chari='1F4BB' class='emomapa' shape='rect' coords='36,144,70,179'>
+                    <area data-emo='336' data-chari='1F4F1' class='emomapa' shape='rect' coords='71,144,105,179'>
+                    <area data-emo='337' data-chari='260E' class='emomapa' shape='rect' coords='106,144,140,179'>
+                    <area data-emo='338' data-chari='1F4DE' class='emomapa' shape='rect' coords='141,144,175,179'>
+                    <area data-emo='339' data-chari='1F4DF' class='emomapa' shape='rect' coords='176,144,210,179'>
+                    <area data-emo='340' data-chari='1F4E0' class='emomapa' shape='rect' coords='211,144,245,179'>
+                    <area data-emo='341' data-chari='1F4E1' class='emomapa' shape='rect' coords='0,180,35,215'>
+                    <area data-emo='342' data-chari='1F4FA' class='emomapa' shape='rect' coords='36,180,70,215'>
+                    <area data-emo='343' data-chari='1F4FB' class='emomapa' shape='rect' coords='71,180,105,215'>
+                    <area data-emo='344' data-chari='1F50A' class='emomapa' shape='rect' coords='106,180,140,215'>
+                    <area data-emo='345' data-chari='1F509' class='emomapa' shape='rect' coords='141,180,175,215'>
+                    <area data-emo='346' data-chari='1F508' class='emomapa' shape='rect' coords='176,180,210,215'>
+                    <area data-emo='347' data-chari='1F507' class='emomapa' shape='rect' coords='211,180,245,215'>
+                    <area data-emo='348' data-chari='1F514' class='emomapa' shape='rect' coords='0,216,35,251'>
+                    <area data-emo='349' data-chari='1F515' class='emomapa' shape='rect' coords='36,216,70,251'>
+                    <area data-emo='350' data-chari='1F4E2' class='emomapa' shape='rect' coords='71,216,105,251'>
+                    <area data-emo='351' data-chari='1F4E3' class='emomapa' shape='rect' coords='106,216,140,251'>
+                    <area data-emo='352' data-chari='23F3' class='emomapa' shape='rect' coords='141,216,175,251'>
+                    <area data-emo='353' data-chari='231B' class='emomapa' shape='rect' coords='176,216,210,251'>
+                    <area data-emo='354' data-chari='23F0' class='emomapa' shape='rect' coords='211,216,245,251'>
+                    <area data-emo='355' data-chari='231A' class='emomapa' shape='rect' coords='0,252,35,287'>
+                    <area data-emo='356' data-chari='1F513' class='emomapa' shape='rect' coords='36,252,70,287'>
+                    <area data-emo='357' data-chari='1F512' class='emomapa' shape='rect' coords='71,252,105,287'>
+                    <area data-emo='358' data-chari='1F50F' class='emomapa' shape='rect' coords='106,252,140,287'>
+                    <area data-emo='359' data-chari='1F510' class='emomapa' shape='rect' coords='141,252,175,287'>
+                    <area data-emo='360' data-chari='1F511' class='emomapa' shape='rect' coords='176,252,210,287'>
+                    <area data-emo='361' data-chari='1F50E' class='emomapa' shape='rect' coords='211,252,245,287'>
+                    <area data-emo='362' data-chari='1F4A1' class='emomapa' shape='rect' coords='0,288,35,323'>
+                    <area data-emo='363' data-chari='1F526' class='emomapa' shape='rect' coords='36,288,70,323'>
+                    <area data-emo='364' data-chari='1F506' class='emomapa' shape='rect' coords='71,288,105,323'>
+                    <area data-emo='365' data-chari='1F505' class='emomapa' shape='rect' coords='106,288,140,323'>
+                    <area data-emo='366' data-chari='1F50C' class='emomapa' shape='rect' coords='141,288,175,323'>
+                    <area data-emo='367' data-chari='1F50B' class='emomapa' shape='rect' coords='176,288,210,323'>
+                    <area data-emo='368' data-chari='1F50D' class='emomapa' shape='rect' coords='211,288,245,323'>
+                    <area data-emo='369' data-chari='1F6C1' class='emomapa' shape='rect' coords='0,324,35,359'>
+                    <area data-emo='370' data-chari='1F6C0' class='emomapa' shape='rect' coords='36,324,70,359'>
+                    <area data-emo='371' data-chari='1F6BF' class='emomapa' shape='rect' coords='71,324,105,359'>
+                    <area data-emo='372' data-chari='1F6BD' class='emomapa' shape='rect' coords='106,324,140,359'>
+                    <area data-emo='373' data-chari='1F527' class='emomapa' shape='rect' coords='141,324,175,359'>
+                    <area data-emo='374' data-chari='1F529' class='emomapa' shape='rect' coords='176,324,210,359'>
+                    <area data-emo='375' data-chari='1F528' class='emomapa' shape='rect' coords='211,324,245,359'>
+                    <area data-emo='376' data-chari='1F6AA' class='emomapa' shape='rect' coords='0,360,35,395'>
+                    <area data-emo='377' data-chari='1F6AC' class='emomapa' shape='rect' coords='36,360,70,395'>
+                    <area data-emo='378' data-chari='1F4A3' class='emomapa' shape='rect' coords='71,360,105,395'>
+                    <area data-emo='379' data-chari='1F52B' class='emomapa' shape='rect' coords='106,360,140,395'>
+                    <area data-emo='380' data-chari='1F52A' class='emomapa' shape='rect' coords='141,360,175,395'>
+                    <area data-emo='381' data-chari='1F48A' class='emomapa' shape='rect' coords='176,360,210,395'>
+                    <area data-emo='382' data-chari='1F489' class='emomapa' shape='rect' coords='211,360,245,395'>
+                    <area data-emo='383' data-chari='1F4B0' class='emomapa' shape='rect' coords='0,396,35,431'>
+                    <area data-emo='384' data-chari='1F4B4' class='emomapa' shape='rect' coords='36,396,70,431'>
+                    <area data-emo='385' data-chari='1F4B5' class='emomapa' shape='rect' coords='71,396,105,431'>
+                    <area data-emo='386' data-chari='1F4B7' class='emomapa' shape='rect' coords='106,396,140,431'>
+                    <area data-emo='387' data-chari='1F4B6' class='emomapa' shape='rect' coords='141,396,175,431'>
+                    <area data-emo='388' data-chari='1F4B3' class='emomapa' shape='rect' coords='176,396,210,431'>
+                    <area data-emo='389' data-chari='1F4B8' class='emomapa' shape='rect' coords='211,396,245,431'>
+                    <area data-emo='390' data-chari='1F4F2' class='emomapa' shape='rect' coords='0,432,35,467'>
+                    <area data-emo='391' data-chari='1F4E7' class='emomapa' shape='rect' coords='36,432,70,467'>
+                    <area data-emo='392' data-chari='1F4E5' class='emomapa' shape='rect' coords='71,432,105,467'>
+                    <area data-emo='393' data-chari='1F4E4' class='emomapa' shape='rect' coords='106,432,140,467'>
+                    <area data-emo='394' data-chari='2709' class='emomapa' shape='rect' coords='141,432,175,467'>
+                    <area data-emo='395' data-chari='1F4E9' class='emomapa' shape='rect' coords='176,432,210,467'>
+                    <area data-emo='396' data-chari='1F4E8' class='emomapa' shape='rect' coords='211,432,245,467'>
+                    <area data-emo='397' data-chari='1F4EF' class='emomapa' shape='rect' coords='0,468,35,503'>
+                    <area data-emo='398' data-chari='1F4EB' class='emomapa' shape='rect' coords='36,468,70,503'>
+                    <area data-emo='399' data-chari='1F4EA' class='emomapa' shape='rect' coords='71,468,105,503'>
+                    <area data-emo='400' data-chari='1F4EC' class='emomapa' shape='rect' coords='106,468,140,503'>
+                    <area data-emo='401' data-chari='1F4ED' class='emomapa' shape='rect' coords='141,468,175,503'>
+                    <area data-emo='402' data-chari='1F4EE' class='emomapa' shape='rect' coords='176,468,210,503'>
+                    <area data-emo='403' data-chari='1F4E6' class='emomapa' shape='rect' coords='211,468,245,503'>
+                    <area data-emo='404' data-chari='1F4DD' class='emomapa' shape='rect' coords='0,504,35,539'>
+                    <area data-emo='405' data-chari='1F4C4' class='emomapa' shape='rect' coords='36,504,70,539'>
+                    <area data-emo='406' data-chari='1F4C3' class='emomapa' shape='rect' coords='71,504,105,539'>
+                    <area data-emo='407' data-chari='1F4D1' class='emomapa' shape='rect' coords='106,504,140,539'>
+                    <area data-emo='408' data-chari='1F4CA' class='emomapa' shape='rect' coords='141,504,175,539'>
+                    <area data-emo='409' data-chari='1F4C8' class='emomapa' shape='rect' coords='176,504,210,539'>
+                    <area data-emo='410' data-chari='1F4C9' class='emomapa' shape='rect' coords='211,504,245,539'>
+                    <area data-emo='411' data-chari='1F4DC' class='emomapa' shape='rect' coords='0,540,35,575'>
+                    <area data-emo='412' data-chari='1F4CB' class='emomapa' shape='rect' coords='36,540,70,575'>
+                    <area data-emo='413' data-chari='1F4C5' class='emomapa' shape='rect' coords='71,540,105,575'>
+                    <area data-emo='414' data-chari='1F4C6' class='emomapa' shape='rect' coords='106,540,140,575'>
+                    <area data-emo='415' data-chari='1F4C7' class='emomapa' shape='rect' coords='141,540,175,575'>
+                    <area data-emo='416' data-chari='1F4C1' class='emomapa' shape='rect' coords='176,540,210,575'>
+                    <area data-emo='417' data-chari='1F4C2' class='emomapa' shape='rect' coords='211,540,245,575'>
+                    <area data-emo='418' data-chari='2702' class='emomapa' shape='rect' coords='0,576,35,611'>
+                    <area data-emo='419' data-chari='1F4CC' class='emomapa' shape='rect' coords='36,576,70,611'>
+                    <area data-emo='420' data-chari='1F4CE' class='emomapa' shape='rect' coords='71,576,105,611'>
+                    <area data-emo='421' data-chari='2712' class='emomapa' shape='rect' coords='106,576,140,611'>
+                    <area data-emo='422' data-chari='270F' class='emomapa' shape='rect' coords='141,576,175,611'>
+                    <area data-emo='423' data-chari='1F4CF' class='emomapa' shape='rect' coords='176,576,210,611'>
+                    <area data-emo='424' data-chari='1F4D0' class='emomapa' shape='rect' coords='211,576,245,611'>
+                    <area data-emo='425' data-chari='1F4D5' class='emomapa' shape='rect' coords='0,612,35,647'>
+                    <area data-emo='426' data-chari='1F4D7' class='emomapa' shape='rect' coords='36,612,70,647'>
+                    <area data-emo='427' data-chari='1F4D8' class='emomapa' shape='rect' coords='71,612,105,647'>
+                    <area data-emo='428' data-chari='1F4D9' class='emomapa' shape='rect' coords='106,612,140,647'>
+                    <area data-emo='429' data-chari='1F4D3' class='emomapa' shape='rect' coords='141,612,175,647'>
+                    <area data-emo='430' data-chari='1F4D4' class='emomapa' shape='rect' coords='176,612,210,647'>
+                    <area data-emo='431' data-chari='1F4D2' class='emomapa' shape='rect' coords='211,612,245,647'>
+                    <area data-emo='432' data-chari='1F4DA' class='emomapa' shape='rect' coords='0,648,35,683'>
+                    <area data-emo='433' data-chari='1F4D6' class='emomapa' shape='rect' coords='36,648,70,683'>
+                    <area data-emo='434' data-chari='1F516' class='emomapa' shape='rect' coords='71,648,105,683'>
+                    <area data-emo='435' data-chari='1F4DB' class='emomapa' shape='rect' coords='106,648,140,683'>
+                    <area data-emo='436' data-chari='1F52C' class='emomapa' shape='rect' coords='141,648,175,683'>
+                    <area data-emo='437' data-chari='1F52D' class='emomapa' shape='rect' coords='176,648,210,683'>
+                    <area data-emo='438' data-chari='1F4F0' class='emomapa' shape='rect' coords='211,648,245,683'>
+                    <area data-emo='439' data-chari='1F3A8' class='emomapa' shape='rect' coords='0,684,35,719'>
+                    <area data-emo='440' data-chari='1F3AC' class='emomapa' shape='rect' coords='36,684,70,719'>
+                    <area data-emo='441' data-chari='1F3A4' class='emomapa' shape='rect' coords='71,684,105,719'>
+                    <area data-emo='442' data-chari='1F3A7' class='emomapa' shape='rect' coords='106,684,140,719'>
+                    <area data-emo='443' data-chari='1F3BC' class='emomapa' shape='rect' coords='141,684,175,719'>
+                    <area data-emo='444' data-chari='1F3B5' class='emomapa' shape='rect' coords='176,684,210,719'>
+                    <area data-emo='445' data-chari='1F3B6' class='emomapa' shape='rect' coords='211,684,245,719'>
+                    <area data-emo='446' data-chari='1F3B9' class='emomapa' shape='rect' coords='0,720,35,755'>
+                    <area data-emo='447' data-chari='1F3BB' class='emomapa' shape='rect' coords='36,720,70,755'>
+                    <area data-emo='448' data-chari='1F3BA' class='emomapa' shape='rect' coords='71,720,105,755'>
+                    <area data-emo='449' data-chari='1F3B7' class='emomapa' shape='rect' coords='106,720,140,755'>
+                    <area data-emo='450' data-chari='1F3B8' class='emomapa' shape='rect' coords='141,720,175,755'>
+                    <area data-emo='451' data-chari='1F47E' class='emomapa' shape='rect' coords='176,720,210,755'>
+                    <area data-emo='452' data-chari='1F3AE' class='emomapa' shape='rect' coords='211,720,245,755'>
+                    <area data-emo='453' data-chari='1F0CF' class='emomapa' shape='rect' coords='0,756,35,791'>
+                    <area data-emo='454' data-chari='1F3B4' class='emomapa' shape='rect' coords='36,756,70,791'>
+                    <area data-emo='455' data-chari='1F004' class='emomapa' shape='rect' coords='71,756,105,791'>
+                    <area data-emo='456' data-chari='1F3B2' class='emomapa' shape='rect' coords='106,756,140,791'>
+                    <area data-emo='457' data-chari='1F3AF' class='emomapa' shape='rect' coords='141,756,175,791'>
+                    <area data-emo='458' data-chari='1F3C8' class='emomapa' shape='rect' coords='176,756,210,791'>
+                    <area data-emo='459' data-chari='1F3C0' class='emomapa' shape='rect' coords='211,756,245,791'>
+                    <area data-emo='460' data-chari='26BD' class='emomapa' shape='rect' coords='0,792,35,827'>
+                    <area data-emo='461' data-chari='26BE' class='emomapa' shape='rect' coords='36,792,70,827'>
+                    <area data-emo='462' data-chari='1F3BE' class='emomapa' shape='rect' coords='71,792,105,827'>
+                    <area data-emo='463' data-chari='1F3B1' class='emomapa' shape='rect' coords='106,792,140,827'>
+                    <area data-emo='464' data-chari='1F3C9' class='emomapa' shape='rect' coords='141,792,175,827'>
+                    <area data-emo='465' data-chari='1F3B3' class='emomapa' shape='rect' coords='176,792,210,827'>
+                    <area data-emo='466' data-chari='26F3' class='emomapa' shape='rect' coords='211,792,245,827'>
+                    <area data-emo='467' data-chari='1F6B5' class='emomapa' shape='rect' coords='0,828,35,863'>
+                    <area data-emo='468' data-chari='1F6B4' class='emomapa' shape='rect' coords='36,828,70,863'>
+                    <area data-emo='469' data-chari='1F3C1' class='emomapa' shape='rect' coords='71,828,105,863'>
+                    <area data-emo='470' data-chari='1F3C7' class='emomapa' shape='rect' coords='106,828,140,863'>
+                    <area data-emo='471' data-chari='1F3C6' class='emomapa' shape='rect' coords='141,828,175,863'>
+                    <area data-emo='472' data-chari='1F3BF' class='emomapa' shape='rect' coords='176,828,210,863'>
+                    <area data-emo='473' data-chari='1F3C2' class='emomapa' shape='rect' coords='211,828,245,863'>
+                    <area data-emo='474' data-chari='1F3CA' class='emomapa' shape='rect' coords='0,864,35,899'>
+                    <area data-emo='475' data-chari='1F3C4' class='emomapa' shape='rect' coords='36,864,70,899'>
+                    <area data-emo='476' data-chari='1F3A3' class='emomapa' shape='rect' coords='71,864,105,899'>
+                    <area data-emo='477' data-chari='2615' class='emomapa' shape='rect' coords='106,864,140,899'>
+                    <area data-emo='478' data-chari='1F375' class='emomapa' shape='rect' coords='141,864,175,899'>
+                    <area data-emo='479' data-chari='1F376' class='emomapa' shape='rect' coords='176,864,210,899'>
+                    <area data-emo='480' data-chari='1F37C' class='emomapa' shape='rect' coords='211,864,245,899'>
+                    <area data-emo='481' data-chari='1F37A' class='emomapa' shape='rect' coords='0,900,35,935'>
+                    <area data-emo='482' data-chari='1F37B' class='emomapa' shape='rect' coords='36,900,70,935'>
+                    <area data-emo='483' data-chari='1F378' class='emomapa' shape='rect' coords='71,900,105,935'>
+                    <area data-emo='484' data-chari='1F379' class='emomapa' shape='rect' coords='106,900,140,935'>
+                    <area data-emo='485' data-chari='1F377' class='emomapa' shape='rect' coords='141,900,175,935'>
+                    <area data-emo='486' data-chari='1F374' class='emomapa' shape='rect' coords='176,900,210,935'>
+                    <area data-emo='487' data-chari='1F355' class='emomapa' shape='rect' coords='211,900,245,935'>
+                    <area data-emo='488' data-chari='1F354' class='emomapa' shape='rect' coords='0,936,35,971'>
+                    <area data-emo='489' data-chari='1F35F' class='emomapa' shape='rect' coords='36,936,70,971'>
+                    <area data-emo='490' data-chari='1F357' class='emomapa' shape='rect' coords='71,936,105,971'>
+                    <area data-emo='491' data-chari='1F356' class='emomapa' shape='rect' coords='106,936,140,971'>
+                    <area data-emo='492' data-chari='1F35D' class='emomapa' shape='rect' coords='141,936,175,971'>
+                    <area data-emo='493' data-chari='1F35B' class='emomapa' shape='rect' coords='176,936,210,971'>
+                    <area data-emo='494' data-chari='1F364' class='emomapa' shape='rect' coords='211,936,245,971'>
+                    <area data-emo='495' data-chari='1F371' class='emomapa' shape='rect' coords='0,972,35,1007'>
+                    <area data-emo='496' data-chari='1F363' class='emomapa' shape='rect' coords='36,972,70,1007'>
+                    <area data-emo='497' data-chari='1F365' class='emomapa' shape='rect' coords='71,972,105,1007'>
+                    <area data-emo='498' data-chari='1F359' class='emomapa' shape='rect' coords='106,972,140,1007'>
+                    <area data-emo='499' data-chari='1F358' class='emomapa' shape='rect' coords='141,972,175,1007'>
+                    <area data-emo='500' data-chari='1F35A' class='emomapa' shape='rect' coords='176,972,210,1007'>
+                    <area data-emo='501' data-chari='1F35C' class='emomapa' shape='rect' coords='211,972,245,1007'>
+                    <area data-emo='502' data-chari='1F372' class='emomapa' shape='rect' coords='0,1008,35,1043'>
+                    <area data-emo='503' data-chari='1F362' class='emomapa' shape='rect' coords='36,1008,70,1043'>
+                    <area data-emo='504' data-chari='1F361' class='emomapa' shape='rect' coords='71,1008,105,1043'>
+                    <area data-emo='505' data-chari='1F373' class='emomapa' shape='rect' coords='106,1008,140,1043'>
+                    <area data-emo='506' data-chari='1F35E' class='emomapa' shape='rect' coords='141,1008,175,1043'>
+                    <area data-emo='507' data-chari='1F369' class='emomapa' shape='rect' coords='176,1008,210,1043'>
+                    <area data-emo='508' data-chari='1F36E' class='emomapa' shape='rect' coords='211,1008,245,1043'>
+                    <area data-emo='509' data-chari='1F366' class='emomapa' shape='rect' coords='0,1044,35,1079'>
+                    <area data-emo='510' data-chari='1F368' class='emomapa' shape='rect' coords='36,1044,70,1079'>
+                    <area data-emo='511' data-chari='1F367' class='emomapa' shape='rect' coords='71,1044,105,1079'>
+                    <area data-emo='512' data-chari='1F382' class='emomapa' shape='rect' coords='106,1044,140,1079'>
+                    <area data-emo='513' data-chari='1F370' class='emomapa' shape='rect' coords='141,1044,175,1079'>
+                    <area data-emo='514' data-chari='1F36A' class='emomapa' shape='rect' coords='176,1044,210,1079'>
+                    <area data-emo='515' data-chari='1F36B' class='emomapa' shape='rect' coords='211,1044,245,1079'>
+                    <area data-emo='516' data-chari='1F36C' class='emomapa' shape='rect' coords='0,1080,35,1115'>
+                    <area data-emo='517' data-chari='1F36D' class='emomapa' shape='rect' coords='36,1080,70,1115'>
+                    <area data-emo='518' data-chari='1F36F' class='emomapa' shape='rect' coords='71,1080,105,1115'>
+                    <area data-emo='519' data-chari='1F34E' class='emomapa' shape='rect' coords='106,1080,140,1115'>
+                    <area data-emo='520' data-chari='1F34F' class='emomapa' shape='rect' coords='141,1080,175,1115'>
+                    <area data-emo='521' data-chari='1F34A' class='emomapa' shape='rect' coords='176,1080,210,1115'>
+                    <area data-emo='522' data-chari='1F34B' class='emomapa' shape='rect' coords='211,1080,245,1115'>
+                    <area data-emo='523' data-chari='1F352' class='emomapa' shape='rect' coords='0,1116,35,1151'>
+                    <area data-emo='524' data-chari='1F347' class='emomapa' shape='rect' coords='36,1116,70,1151'>
+                    <area data-emo='525' data-chari='1F349' class='emomapa' shape='rect' coords='71,1116,105,1151'>
+                    <area data-emo='526' data-chari='1F353' class='emomapa' shape='rect' coords='106,1116,140,1151'>
+                    <area data-emo='527' data-chari='1F351' class='emomapa' shape='rect' coords='141,1116,175,1151'>
+                    <area data-emo='528' data-chari='1F348' class='emomapa' shape='rect' coords='176,1116,210,1151'>
+                    <area data-emo='529' data-chari='1F34C' class='emomapa' shape='rect' coords='211,1116,245,1151'>
+                    <area data-emo='530' data-chari='1F350' class='emomapa' shape='rect' coords='0,1152,35,1187'>
+                    <area data-emo='531' data-chari='1F34D' class='emomapa' shape='rect' coords='36,1152,70,1187'>
+                    <area data-emo='532' data-chari='1F360' class='emomapa' shape='rect' coords='71,1152,105,1187'>
+                    <area data-emo='533' data-chari='1F346' class='emomapa' shape='rect' coords='106,1152,140,1187'>
+                    <area data-emo='534' data-chari='1F345' class='emomapa' shape='rect' coords='141,1152,175,1187'>
+                    <area data-emo='535' data-chari='1F33D' class='emomapa' shape='rect' coords='176,1152,210,1187'>
+                </map>
+                <map name="mapa04">
+                    <area data-emo='536' data-chari='1F3E0' class='emomapa' shape='rect' coords='0,0,35,35'>
+                    <area data-emo='537' data-chari='1F3E1' class='emomapa' shape='rect' coords='36,0,70,35'>
+                    <area data-emo='538' data-chari='1F3EB' class='emomapa' shape='rect' coords='71,0,105,35'>
+                    <area data-emo='539' data-chari='1F3E2' class='emomapa' shape='rect' coords='106,0,140,35'>
+                    <area data-emo='540' data-chari='1F3E3' class='emomapa' shape='rect' coords='141,0,175,35'>
+                    <area data-emo='541' data-chari='1F3E5' class='emomapa' shape='rect' coords='176,0,210,35'>
+                    <area data-emo='542' data-chari='1F3E6' class='emomapa' shape='rect' coords='211,0,245,35'>
+                    <area data-emo='543' data-chari='1F3EA' class='emomapa' shape='rect' coords='0,36,35,71'>
+                    <area data-emo='544' data-chari='1F3E9' class='emomapa' shape='rect' coords='36,36,70,71'>
+                    <area data-emo='545' data-chari='1F3E8' class='emomapa' shape='rect' coords='71,36,105,71'>
+                    <area data-emo='546' data-chari='1F492' class='emomapa' shape='rect' coords='106,36,140,71'>
+                    <area data-emo='547' data-chari='26EA' class='emomapa' shape='rect' coords='141,36,175,71'>
+                    <area data-emo='548' data-chari='1F3EC' class='emomapa' shape='rect' coords='176,36,210,71'>
+                    <area data-emo='549' data-chari='1F3E4' class='emomapa' shape='rect' coords='211,36,245,71'>
+                    <area data-emo='550' data-chari='1F307' class='emomapa' shape='rect' coords='0,72,35,107'>
+                    <area data-emo='551' data-chari='1F306' class='emomapa' shape='rect' coords='36,72,70,107'>
+                    <area data-emo='552' data-chari='1F3EF' class='emomapa' shape='rect' coords='71,72,105,107'>
+                    <area data-emo='553' data-chari='1F3F0' class='emomapa' shape='rect' coords='106,72,140,107'>
+                    <area data-emo='554' data-chari='26FA' class='emomapa' shape='rect' coords='141,72,175,107'>
+                    <area data-emo='555' data-chari='1F3ED' class='emomapa' shape='rect' coords='176,72,210,107'>
+                    <area data-emo='556' data-chari='1F5FC' class='emomapa' shape='rect' coords='211,72,245,107'>
+                    <area data-emo='557' data-chari='1F5FE' class='emomapa' shape='rect' coords='0,108,35,143'>
+                    <area data-emo='558' data-chari='1F5FB' class='emomapa' shape='rect' coords='36,108,70,143'>
+                    <area data-emo='559' data-chari='1F304' class='emomapa' shape='rect' coords='71,108,105,143'>
+                    <area data-emo='560' data-chari='1F305' class='emomapa' shape='rect' coords='106,108,140,143'>
+                    <area data-emo='561' data-chari='1F303' class='emomapa' shape='rect' coords='141,108,175,143'>
+                    <area data-emo='562' data-chari='1F5FD' class='emomapa' shape='rect' coords='176,108,210,143'>
+                    <area data-emo='563' data-chari='1F309' class='emomapa' shape='rect' coords='211,108,245,143'>
+                    <area data-emo='564' data-chari='1F3A0' class='emomapa' shape='rect' coords='0,144,35,179'>
+                    <area data-emo='565' data-chari='1F3A1' class='emomapa' shape='rect' coords='36,144,70,179'>
+                    <area data-emo='566' data-chari='26F2' class='emomapa' shape='rect' coords='71,144,105,179'>
+                    <area data-emo='567' data-chari='1F3A2' class='emomapa' shape='rect' coords='106,144,140,179'>
+                    <area data-emo='568' data-chari='1F6A2' class='emomapa' shape='rect' coords='141,144,175,179'>
+                    <area data-emo='569' data-chari='26F5' class='emomapa' shape='rect' coords='176,144,210,179'>
+                    <area data-emo='570' data-chari='1F6A4' class='emomapa' shape='rect' coords='211,144,245,179'>
+                    <area data-emo='571' data-chari='1F6A3' class='emomapa' shape='rect' coords='0,180,35,215'>
+                    <area data-emo='572' data-chari='2693' class='emomapa' shape='rect' coords='36,180,70,215'>
+                    <area data-emo='573' data-chari='1F680' class='emomapa' shape='rect' coords='71,180,105,215'>
+                    <area data-emo='574' data-chari='2708' class='emomapa' shape='rect' coords='106,180,140,215'>
+                    <area data-emo='575' data-chari='1F4BA' class='emomapa' shape='rect' coords='141,180,175,215'>
+                    <area data-emo='576' data-chari='1F681' class='emomapa' shape='rect' coords='176,180,210,215'>
+                    <area data-emo='577' data-chari='1F682' class='emomapa' shape='rect' coords='211,180,245,215'>
+                    <area data-emo='578' data-chari='1F68A' class='emomapa' shape='rect' coords='0,216,35,251'>
+                    <area data-emo='579' data-chari='1F689' class='emomapa' shape='rect' coords='36,216,70,251'>
+                    <area data-emo='580' data-chari='1F69E' class='emomapa' shape='rect' coords='71,216,105,251'>
+                    <area data-emo='581' data-chari='1F686' class='emomapa' shape='rect' coords='106,216,140,251'>
+                    <area data-emo='582' data-chari='1F684' class='emomapa' shape='rect' coords='141,216,175,251'>
+                    <area data-emo='583' data-chari='1F685' class='emomapa' shape='rect' coords='176,216,210,251'>
+                    <area data-emo='584' data-chari='1F688' class='emomapa' shape='rect' coords='211,216,245,251'>
+                    <area data-emo='585' data-chari='1F687' class='emomapa' shape='rect' coords='0,252,35,287'>
+                    <area data-emo='586' data-chari='1F69D' class='emomapa' shape='rect' coords='36,252,70,287'>
+                    <area data-emo='587' data-chari='1F68B' class='emomapa' shape='rect' coords='71,252,105,287'>
+                    <area data-emo='588' data-chari='1F683' class='emomapa' shape='rect' coords='106,252,140,287'>
+                    <area data-emo='589' data-chari='1F68E' class='emomapa' shape='rect' coords='141,252,175,287'>
+                    <area data-emo='590' data-chari='1F68C' class='emomapa' shape='rect' coords='176,252,210,287'>
+                    <area data-emo='591' data-chari='1F68D' class='emomapa' shape='rect' coords='211,252,245,287'>
+                    <area data-emo='592' data-chari='1F699' class='emomapa' shape='rect' coords='0,288,35,323'>
+                    <area data-emo='593' data-chari='1F698' class='emomapa' shape='rect' coords='36,288,70,323'>
+                    <area data-emo='594' data-chari='1F697' class='emomapa' shape='rect' coords='71,288,105,323'>
+                    <area data-emo='595' data-chari='1F695' class='emomapa' shape='rect' coords='106,288,140,323'>
+                    <area data-emo='596' data-chari='1F696' class='emomapa' shape='rect' coords='141,288,175,323'>
+                    <area data-emo='597' data-chari='1F69B' class='emomapa' shape='rect' coords='176,288,210,323'>
+                    <area data-emo='598' data-chari='1F69A' class='emomapa' shape='rect' coords='211,288,245,323'>
+                    <area data-emo='599' data-chari='1F6A8' class='emomapa' shape='rect' coords='0,324,35,359'>
+                    <area data-emo='600' data-chari='1F693' class='emomapa' shape='rect' coords='36,324,70,359'>
+                    <area data-emo='601' data-chari='1F694' class='emomapa' shape='rect' coords='71,324,105,359'>
+                    <area data-emo='602' data-chari='1F692' class='emomapa' shape='rect' coords='106,324,140,359'>
+                    <area data-emo='603' data-chari='1F691' class='emomapa' shape='rect' coords='141,324,175,359'>
+                    <area data-emo='604' data-chari='1F690' class='emomapa' shape='rect' coords='176,324,210,359'>
+                    <area data-emo='605' data-chari='1F6B2' class='emomapa' shape='rect' coords='211,324,245,359'>
+                    <area data-emo='606' data-chari='1F6A1' class='emomapa' shape='rect' coords='0,360,35,395'>
+                    <area data-emo='607' data-chari='1F69F' class='emomapa' shape='rect' coords='36,360,70,395'>
+                    <area data-emo='608' data-chari='1F6A0' class='emomapa' shape='rect' coords='71,360,105,395'>
+                    <area data-emo='609' data-chari='1F69C' class='emomapa' shape='rect' coords='106,360,140,395'>
+                    <area data-emo='610' data-chari='1F488' class='emomapa' shape='rect' coords='141,360,175,395'>
+                    <area data-emo='611' data-chari='1F68F' class='emomapa' shape='rect' coords='176,360,210,395'>
+                    <area data-emo='612' data-chari='1F3AB' class='emomapa' shape='rect' coords='211,360,245,395'>
+                    <area data-emo='613' data-chari='1F6A6' class='emomapa' shape='rect' coords='0,396,35,431'>
+                    <area data-emo='614' data-chari='1F6A5' class='emomapa' shape='rect' coords='36,396,70,431'>
+                    <area data-emo='615' data-chari='26A0' class='emomapa' shape='rect' coords='71,396,105,431'>
+                    <area data-emo='616' data-chari='1F6A7' class='emomapa' shape='rect' coords='106,396,140,431'>
+                    <area data-emo='617' data-chari='1F530' class='emomapa' shape='rect' coords='141,396,175,431'>
+                    <area data-emo='618' data-chari='26FD' class='emomapa' shape='rect' coords='176,396,210,431'>
+                    <area data-emo='619' data-chari='1F3EE' class='emomapa' shape='rect' coords='211,396,245,431'>
+                    <area data-emo='620' data-chari='1F3B0' class='emomapa' shape='rect' coords='0,432,35,467'>
+                    <area data-emo='621' data-chari='2668' class='emomapa' shape='rect' coords='36,432,70,467'>
+                    <area data-emo='622' data-chari='1F5FF' class='emomapa' shape='rect' coords='71,432,105,467'>
+                    <area data-emo='623' data-chari='1F3AA' class='emomapa' shape='rect' coords='106,432,140,467'>
+                    <area data-emo='624' data-chari='1F3AD' class='emomapa' shape='rect' coords='141,432,175,467'>
+                    <area data-emo='625' data-chari='1F4CD' class='emomapa' shape='rect' coords='176,432,210,467'>
+                    <area data-emo='626' data-chari='1F6A9' class='emomapa' shape='rect' coords='211,432,245,467'>
+                    <area data-emo='627' data-chari='E50B' class='emomapa' shape='rect' coords='0,468,35,503'>
+                    <area data-emo='628' data-chari='E514' class='emomapa' shape='rect' coords='36,468,70,503'>
+                    <area data-emo='629' data-chari='E50E' class='emomapa' shape='rect' coords='71,468,105,503'>
+                    <area data-emo='630' data-chari='E513' class='emomapa' shape='rect' coords='106,468,140,503'>
+                    <area data-emo='631' data-chari='E50C' class='emomapa' shape='rect' coords='141,468,175,503'>
+                    <area data-emo='632' data-chari='E50D' class='emomapa' shape='rect' coords='176,468,210,503'>
+                    <area data-emo='633' data-chari='E511' class='emomapa' shape='rect' coords='211,468,245,503'>
+                    <area data-emo='634' data-chari='E50F' class='emomapa' shape='rect' coords='0,504,35,539'>
+                    <area data-emo='635' data-chari='E512' class='emomapa' shape='rect' coords='36,504,70,539'>
+                    <area data-emo='636' data-chari='E510' class='emomapa' shape='rect' coords='71,504,105,539'>
+                </map>
+                <map name="mapa05">
+                    <area data-emo='637' data-chari='E21C' class='emomapa' shape='rect' coords='0,0,35,35'>
+                    <area data-emo='638' data-chari='E21D' class='emomapa' shape='rect' coords='36,0,70,35'>
+                    <area data-emo='639' data-chari='E21E' class='emomapa' shape='rect' coords='71,0,105,35'>
+                    <area data-emo='640' data-chari='E21F' class='emomapa' shape='rect' coords='106,0,140,35'>
+                    <area data-emo='641' data-chari='E220' class='emomapa' shape='rect' coords='141,0,175,35'>
+                    <area data-emo='642' data-chari='E221' class='emomapa' shape='rect' coords='176,0,210,35'>
+                    <area data-emo='643' data-chari='E222' class='emomapa' shape='rect' coords='211,0,245,35'>
+                    <area data-emo='644' data-chari='E223' class='emomapa' shape='rect' coords='0,36,35,71'>
+                    <area data-emo='645' data-chari='E224' class='emomapa' shape='rect' coords='36,36,70,71'>
+                    <area data-emo='646' data-chari='E225' class='emomapa' shape='rect' coords='71,36,105,71'>
+                    <area data-emo='647' data-chari='1F51F' class='emomapa' shape='rect' coords='106,36,140,71'>
+                    <area data-emo='648' data-chari='1F522' class='emomapa' shape='rect' coords='141,36,175,71'>
+                    <area data-emo='649' data-chari='E210' class='emomapa' shape='rect' coords='176,36,210,71'>
+                    <area data-emo='650' data-chari='1F523' class='emomapa' shape='rect' coords='211,36,245,71'>
+                    <area data-emo='651' data-chari='2B06' class='emomapa' shape='rect' coords='0,72,35,107'>
+                    <area data-emo='652' data-chari='2B07' class='emomapa' shape='rect' coords='36,72,70,107'>
+                    <area data-emo='653' data-chari='2B05' class='emomapa' shape='rect' coords='71,72,105,107'>
+                    <area data-emo='654' data-chari='27A1' class='emomapa' shape='rect' coords='106,72,140,107'>
+                    <area data-emo='655' data-chari='1F520' class='emomapa' shape='rect' coords='141,72,175,107'>
+                    <area data-emo='656' data-chari='1F521' class='emomapa' shape='rect' coords='176,72,210,107'>
+                    <area data-emo='657' data-chari='1F524' class='emomapa' shape='rect' coords='211,72,245,107'>
+                    <area data-emo='658' data-chari='2197' class='emomapa' shape='rect' coords='0,108,35,143'>
+                    <area data-emo='659' data-chari='2196' class='emomapa' shape='rect' coords='36,108,70,143'>
+                    <area data-emo='660' data-chari='2198' class='emomapa' shape='rect' coords='71,108,105,143'>
+                    <area data-emo='661' data-chari='2199' class='emomapa' shape='rect' coords='106,108,140,143'>
+                    <area data-emo='662' data-chari='2194' class='emomapa' shape='rect' coords='141,108,175,143'>
+                    <area data-emo='663' data-chari='2195' class='emomapa' shape='rect' coords='176,108,210,143'>
+                    <area data-emo='664' data-chari='1F504' class='emomapa' shape='rect' coords='211,108,245,143'>
+                    <area data-emo='665' data-chari='25C0' class='emomapa' shape='rect' coords='0,144,35,179'>
+                    <area data-emo='666' data-chari='25B6' class='emomapa' shape='rect' coords='36,144,70,179'>
+                    <area data-emo='667' data-chari='1F53C' class='emomapa' shape='rect' coords='71,144,105,179'>
+                    <area data-emo='668' data-chari='1F53D' class='emomapa' shape='rect' coords='106,144,140,179'>
+                    <area data-emo='669' data-chari='21A9' class='emomapa' shape='rect' coords='141,144,175,179'>
+                    <area data-emo='670' data-chari='21AA' class='emomapa' shape='rect' coords='176,144,210,179'>
+                    <area data-emo='671' data-chari='2139' class='emomapa' shape='rect' coords='211,144,245,179'>
+                    <area data-emo='672' data-chari='23EA' class='emomapa' shape='rect' coords='0,180,35,215'>
+                    <area data-emo='673' data-chari='23E9' class='emomapa' shape='rect' coords='36,180,70,215'>
+                    <area data-emo='674' data-chari='23EB' class='emomapa' shape='rect' coords='71,180,105,215'>
+                    <area data-emo='675' data-chari='23EC' class='emomapa' shape='rect' coords='106,180,140,215'>
+                    <area data-emo='676' data-chari='2935' class='emomapa' shape='rect' coords='141,180,175,215'>
+                    <area data-emo='677' data-chari='2934' class='emomapa' shape='rect' coords='176,180,210,215'>
+                    <area data-emo='678' data-chari='1F197' class='emomapa' shape='rect' coords='211,180,245,215'>
+                    <area data-emo='679' data-chari='1F500' class='emomapa' shape='rect' coords='0,216,35,251'>
+                    <area data-emo='680' data-chari='1F501' class='emomapa' shape='rect' coords='36,216,70,251'>
+                    <area data-emo='681' data-chari='1F502' class='emomapa' shape='rect' coords='71,216,105,251'>
+                    <area data-emo='682' data-chari='1F195' class='emomapa' shape='rect' coords='106,216,140,251'>
+                    <area data-emo='683' data-chari='1F199' class='emomapa' shape='rect' coords='141,216,175,251'>
+                    <area data-emo='684' data-chari='1F192' class='emomapa' shape='rect' coords='176,216,210,251'>
+                    <area data-emo='685' data-chari='1F193' class='emomapa' shape='rect' coords='211,216,245,251'>
+                    <area data-emo='686' data-chari='1F196' class='emomapa' shape='rect' coords='0,252,35,287'>
+                    <area data-emo='687' data-chari='1F4F6' class='emomapa' shape='rect' coords='36,252,70,287'>
+                    <area data-emo='688' data-chari='1F3A6' class='emomapa' shape='rect' coords='71,252,105,287'>
+                    <area data-emo='689' data-chari='1F201' class='emomapa' shape='rect' coords='106,252,140,287'>
+                    <area data-emo='690' data-chari='1F22F' class='emomapa' shape='rect' coords='141,252,175,287'>
+                    <area data-emo='691' data-chari='1F233' class='emomapa' shape='rect' coords='176,252,210,287'>
+                    <area data-emo='692' data-chari='1F235' class='emomapa' shape='rect' coords='211,252,245,287'>
+                    <area data-emo='693' data-chari='1F234' class='emomapa' shape='rect' coords='0,288,35,323'>
+                    <area data-emo='694' data-chari='1F232' class='emomapa' shape='rect' coords='36,288,70,323'>
+                    <area data-emo='695' data-chari='1F250' class='emomapa' shape='rect' coords='71,288,105,323'>
+                    <area data-emo='696' data-chari='1F239' class='emomapa' shape='rect' coords='106,288,140,323'>
+                    <area data-emo='697' data-chari='1F23A' class='emomapa' shape='rect' coords='141,288,175,323'>
+                    <area data-emo='698' data-chari='1F236' class='emomapa' shape='rect' coords='176,288,210,323'>
+                    <area data-emo='699' data-chari='1F21A' class='emomapa' shape='rect' coords='211,288,245,323'>
+                    <area data-emo='700' data-chari='1F6BB' class='emomapa' shape='rect' coords='0,324,35,359'>
+                    <area data-emo='701' data-chari='1F6B9' class='emomapa' shape='rect' coords='36,324,70,359'>
+                    <area data-emo='702' data-chari='1F6BA' class='emomapa' shape='rect' coords='71,324,105,359'>
+                    <area data-emo='703' data-chari='1F6BC' class='emomapa' shape='rect' coords='106,324,140,359'>
+                    <area data-emo='704' data-chari='1F6BE' class='emomapa' shape='rect' coords='141,324,175,359'>
+                    <area data-emo='705' data-chari='1F6B0' class='emomapa' shape='rect' coords='176,324,210,359'>
+                    <area data-emo='706' data-chari='1F6AE' class='emomapa' shape='rect' coords='211,324,245,359'>
+                    <area data-emo='707' data-chari='1F17F' class='emomapa' shape='rect' coords='0,360,35,395'>
+                    <area data-emo='708' data-chari='267F' class='emomapa' shape='rect' coords='36,360,70,395'>
+                    <area data-emo='709' data-chari='1F6AD' class='emomapa' shape='rect' coords='71,360,105,395'>
+                    <area data-emo='710' data-chari='1F237' class='emomapa' shape='rect' coords='106,360,140,395'>
+                    <area data-emo='711' data-chari='1F238' class='emomapa' shape='rect' coords='141,360,175,395'>
+                    <area data-emo='712' data-chari='1F202' class='emomapa' shape='rect' coords='176,360,210,395'>
+                    <area data-emo='713' data-chari='24C2' class='emomapa' shape='rect' coords='211,360,245,395'>
+                    <area data-emo='714' data-chari='1F6C2' class='emomapa' shape='rect' coords='0,396,35,431'>
+                    <area data-emo='715' data-chari='1F6C4' class='emomapa' shape='rect' coords='36,396,70,431'>
+                    <area data-emo='716' data-chari='1F6C5' class='emomapa' shape='rect' coords='71,396,105,431'>
+                    <area data-emo='717' data-chari='1F6C3' class='emomapa' shape='rect' coords='106,396,140,431'>
+                    <area data-emo='718' data-chari='1F251' class='emomapa' shape='rect' coords='141,396,175,431'>
+                    <area data-emo='719' data-chari='3299' class='emomapa' shape='rect' coords='176,396,210,431'>
+                    <area data-emo='720' data-chari='3297' class='emomapa' shape='rect' coords='211,396,245,431'>
+                    <area data-emo='721' data-chari='1F191' class='emomapa' shape='rect' coords='0,432,35,467'>
+                    <area data-emo='722' data-chari='1F198' class='emomapa' shape='rect' coords='36,432,70,467'>
+                    <area data-emo='723' data-chari='1F194' class='emomapa' shape='rect' coords='71,432,105,467'>
+                    <area data-emo='724' data-chari='1F6AB' class='emomapa' shape='rect' coords='106,432,140,467'>
+                    <area data-emo='725' data-chari='1F51E' class='emomapa' shape='rect' coords='141,432,175,467'>
+                    <area data-emo='726' data-chari='1F4F5' class='emomapa' shape='rect' coords='176,432,210,467'>
+                    <area data-emo='727' data-chari='1F6AF' class='emomapa' shape='rect' coords='211,432,245,467'>
+                    <area data-emo='728' data-chari='1F6B1' class='emomapa' shape='rect' coords='0,468,35,503'>
+                    <area data-emo='729' data-chari='1F6B3' class='emomapa' shape='rect' coords='36,468,70,503'>
+                    <area data-emo='730' data-chari='1F6B7' class='emomapa' shape='rect' coords='71,468,105,503'>
+                    <area data-emo='731' data-chari='1F6B8' class='emomapa' shape='rect' coords='106,468,140,503'>
+                    <area data-emo='732' data-chari='26D4' class='emomapa' shape='rect' coords='141,468,175,503'>
+                    <area data-emo='733' data-chari='2733' class='emomapa' shape='rect' coords='176,468,210,503'>
+                    <area data-emo='734' data-chari='2747' class='emomapa' shape='rect' coords='211,468,245,503'>
+                    <area data-emo='735' data-chari='274E' class='emomapa' shape='rect' coords='0,504,35,539'>
+                    <area data-emo='736' data-chari='2705' class='emomapa' shape='rect' coords='36,504,70,539'>
+                    <area data-emo='737' data-chari='2734' class='emomapa' shape='rect' coords='71,504,105,539'>
+                    <area data-emo='738' data-chari='1F49F' class='emomapa' shape='rect' coords='106,504,140,539'>
+                    <area data-emo='739' data-chari='1F19A' class='emomapa' shape='rect' coords='141,504,175,539'>
+                    <area data-emo='740' data-chari='1F4F3' class='emomapa' shape='rect' coords='176,504,210,539'>
+                    <area data-emo='741' data-chari='1F4F4' class='emomapa' shape='rect' coords='211,504,245,539'>
+                    <area data-emo='742' data-chari='1F170' class='emomapa' shape='rect' coords='0,540,35,575'>
+                    <area data-emo='743' data-chari='1F171' class='emomapa' shape='rect' coords='36,540,70,575'>
+                    <area data-emo='744' data-chari='1F18E' class='emomapa' shape='rect' coords='71,540,105,575'>
+                    <area data-emo='745' data-chari='1F17E' class='emomapa' shape='rect' coords='106,540,140,575'>
+                    <area data-emo='746' data-chari='1F4A0' class='emomapa' shape='rect' coords='141,540,175,575'>
+                    <area data-emo='747' data-chari='27BF ' class='emomapa' shape='rect' coords='176,540,210,575'>
+                    <area data-emo='748' data-chari='267B' class='emomapa' shape='rect' coords='211,540,245,575'>
+                    <area data-emo='749' data-chari='2648' class='emomapa' shape='rect' coords='0,576,35,611'>
+                    <area data-emo='750' data-chari='2649' class='emomapa' shape='rect' coords='36,576,70,611'>
+                    <area data-emo='751' data-chari='264A' class='emomapa' shape='rect' coords='71,576,105,611'>
+                    <area data-emo='752' data-chari='264B' class='emomapa' shape='rect' coords='106,576,140,611'>
+                    <area data-emo='753' data-chari='264C' class='emomapa' shape='rect' coords='141,576,175,611'>
+                    <area data-emo='754' data-chari='264D' class='emomapa' shape='rect' coords='176,576,210,611'>
+                    <area data-emo='755' data-chari='264E' class='emomapa' shape='rect' coords='211,576,245,611'>
+                    <area data-emo='756' data-chari='264F' class='emomapa' shape='rect' coords='0,612,35,647'>
+                    <area data-emo='757' data-chari='2650' class='emomapa' shape='rect' coords='36,612,70,647'>
+                    <area data-emo='758' data-chari='2651' class='emomapa' shape='rect' coords='71,612,105,647'>
+                    <area data-emo='759' data-chari='2652' class='emomapa' shape='rect' coords='106,612,140,647'>
+                    <area data-emo='760' data-chari='2653' class='emomapa' shape='rect' coords='141,612,175,647'>
+                    <area data-emo='761' data-chari='26CE' class='emomapa' shape='rect' coords='176,612,210,647'>
+                    <area data-emo='762' data-chari='1F52F' class='emomapa' shape='rect' coords='211,612,245,647'>
+                    <area data-emo='763' data-chari='1F3E7' class='emomapa' shape='rect' coords='0,648,35,683'>
+                    <area data-emo='764' data-chari='1F4B9' class='emomapa' shape='rect' coords='36,648,70,683'>
+                    <area data-emo='765' data-chari='1F4B2' class='emomapa' shape='rect' coords='71,648,105,683'>
+                    <area data-emo='766' data-chari='1F4B1' class='emomapa' shape='rect' coords='106,648,140,683'>
+                    <area data-emo='767' data-chari='E24E' class='emomapa' shape='rect' coords='141,648,175,683'>
+                    <area data-emo='768' data-chari='E24F' class='emomapa' shape='rect' coords='176,648,210,683'>
+                    <area data-emo='769' data-chari='2122' class='emomapa' shape='rect' coords='211,648,245,683'>
+                    <area data-emo='770' data-chari='303D' class='emomapa' shape='rect' coords='0,684,35,719'>
+                    <area data-emo='771' data-chari='3030' class='emomapa' shape='rect' coords='36,684,70,719'>
+                    <area data-emo='772' data-chari='1F51D' class='emomapa' shape='rect' coords='71,684,105,719'>
+                    <area data-emo='773' data-chari='1F51A' class='emomapa' shape='rect' coords='106,684,140,719'>
+                    <area data-emo='774' data-chari='1F519' class='emomapa' shape='rect' coords='141,684,175,719'>
+                    <area data-emo='775' data-chari='1F51B' class='emomapa' shape='rect' coords='176,684,210,719'>
+                    <area data-emo='776' data-chari='1F51C' class='emomapa' shape='rect' coords='211,684,245,719'>
+                    <area data-emo='777' data-chari='274C' class='emomapa' shape='rect' coords='0,720,35,755'>
+                    <area data-emo='778' data-chari='2B55' class='emomapa' shape='rect' coords='36,720,70,755'>
+                    <area data-emo='779' data-chari='2757' class='emomapa' shape='rect' coords='71,720,105,755'>
+                    <area data-emo='780' data-chari='2753' class='emomapa' shape='rect' coords='106,720,140,755'>
+                    <area data-emo='781' data-chari='2755' class='emomapa' shape='rect' coords='141,720,175,755'>
+                    <area data-emo='782' data-chari='2754' class='emomapa' shape='rect' coords='176,720,210,755'>
+                    <area data-emo='783' data-chari='1F503' class='emomapa' shape='rect' coords='211,720,245,755'>
+                    <area data-emo='784' data-chari='1F55B' class='emomapa' shape='rect' coords='0,756,35,791'>
+                    <area data-emo='785' data-chari='1F567' class='emomapa' shape='rect' coords='36,756,70,791'>
+                    <area data-emo='786' data-chari='1F550' class='emomapa' shape='rect' coords='71,756,105,791'>
+                    <area data-emo='787' data-chari='1F55C' class='emomapa' shape='rect' coords='106,756,140,791'>
+                    <area data-emo='788' data-chari='1F551' class='emomapa' shape='rect' coords='141,756,175,791'>
+                    <area data-emo='789' data-chari='1F55D' class='emomapa' shape='rect' coords='176,756,210,791'>
+                    <area data-emo='790' data-chari='1F552' class='emomapa' shape='rect' coords='211,756,245,791'>
+                    <area data-emo='791' data-chari='1F55E' class='emomapa' shape='rect' coords='0,792,35,827'>
+                    <area data-emo='792' data-chari='1F553' class='emomapa' shape='rect' coords='36,792,70,827'>
+                    <area data-emo='793' data-chari='1F55F' class='emomapa' shape='rect' coords='71,792,105,827'>
+                    <area data-emo='794' data-chari='1F554' class='emomapa' shape='rect' coords='106,792,140,827'>
+                    <area data-emo='795' data-chari='1F560' class='emomapa' shape='rect' coords='141,792,175,827'>
+                    <area data-emo='796' data-chari='1F555' class='emomapa' shape='rect' coords='176,792,210,827'>
+                    <area data-emo='797' data-chari='1F556' class='emomapa' shape='rect' coords='211,792,245,827'>
+                    <area data-emo='798' data-chari='1F557' class='emomapa' shape='rect' coords='0,828,35,863'>
+                    <area data-emo='799' data-chari='1F558' class='emomapa' shape='rect' coords='36,828,70,863'>
+                    <area data-emo='800' data-chari='1F559' class='emomapa' shape='rect' coords='71,828,105,863'>
+                    <area data-emo='801' data-chari='1F55A' class='emomapa' shape='rect' coords='106,828,140,863'>
+                    <area data-emo='802' data-chari='1F561' class='emomapa' shape='rect' coords='141,828,175,863'>
+                    <area data-emo='803' data-chari='1F562' class='emomapa' shape='rect' coords='176,828,210,863'>
+                    <area data-emo='804' data-chari='1F563' class='emomapa' shape='rect' coords='211,828,245,863'>
+                    <area data-emo='805' data-chari='1F564' class='emomapa' shape='rect' coords='0,864,35,899'>
+                    <area data-emo='806' data-chari='1F565' class='emomapa' shape='rect' coords='36,864,70,899'>
+                    <area data-emo='807' data-chari='1F566' class='emomapa' shape='rect' coords='71,864,105,899'>
+                    <area data-emo='808' data-chari='2716' class='emomapa' shape='rect' coords='106,864,140,899'>
+                    <area data-emo='809' data-chari='2795' class='emomapa' shape='rect' coords='141,864,175,899'>
+                    <area data-emo='810' data-chari='2796' class='emomapa' shape='rect' coords='176,864,210,899'>
+                    <area data-emo='811' data-chari='2797' class='emomapa' shape='rect' coords='211,864,245,899'>
+                    <area data-emo='812' data-chari='2660' class='emomapa' shape='rect' coords='0,900,35,935'>
+                    <area data-emo='813' data-chari='2665' class='emomapa' shape='rect' coords='36,900,70,935'>
+                    <area data-emo='814' data-chari='2663' class='emomapa' shape='rect' coords='71,900,105,935'>
+                    <area data-emo='815' data-chari='2666' class='emomapa' shape='rect' coords='106,900,140,935'>
+                    <area data-emo='816' data-chari='1F4AE' class='emomapa' shape='rect' coords='141,900,175,935'>
+                    <area data-emo='817' data-chari='1F4AF' class='emomapa' shape='rect' coords='176,900,210,935'>
+                    <area data-emo='818' data-chari='2714' class='emomapa' shape='rect' coords='211,900,245,935'>
+                    <area data-emo='819' data-chari='2611' class='emomapa' shape='rect' coords='0,936,35,971'>
+                    <area data-emo='820' data-chari='1F518' class='emomapa' shape='rect' coords='36,936,70,971'>
+                    <area data-emo='821' data-chari='1F517' class='emomapa' shape='rect' coords='71,936,105,971'>
+                    <area data-emo='822' data-chari='27B0' class='emomapa' shape='rect' coords='106,936,140,971'>
+                    <area data-emo='823' data-chari='1F531' class='emomapa' shape='rect' coords='141,936,175,971'>
+                    <area data-emo='824' data-chari='1F532' class='emomapa' shape='rect' coords='176,936,210,971'>
+                    <area data-emo='825' data-chari='1F533' class='emomapa' shape='rect' coords='211,936,245,971'>
+                    <area data-emo='826' data-chari='25FC' class='emomapa' shape='rect' coords='0,972,35,1007'>
+                    <area data-emo='827' data-chari='25FB' class='emomapa' shape='rect' coords='36,972,70,1007'>
+                    <area data-emo='828' data-chari='25FE' class='emomapa' shape='rect' coords='71,972,105,1007'>
+                    <area data-emo='829' data-chari='25FD' class='emomapa' shape='rect' coords='106,972,140,1007'>
+                    <area data-emo='830' data-chari='25AA' class='emomapa' shape='rect' coords='141,972,175,1007'>
+                    <area data-emo='831' data-chari='25AB' class='emomapa' shape='rect' coords='176,972,210,1007'>
+                    <area data-emo='832' data-chari='1F53A' class='emomapa' shape='rect' coords='211,972,245,1007'>
+                    <area data-emo='833' data-chari='2B1C' class='emomapa' shape='rect' coords='0,1008,35,1043'>
+                    <area data-emo='834' data-chari='2B1B' class='emomapa' shape='rect' coords='36,1008,70,1043'>
+                    <area data-emo='835' data-chari='26AB' class='emomapa' shape='rect' coords='71,1008,105,1043'>
+                    <area data-emo='836' data-chari='26AA' class='emomapa' shape='rect' coords='106,1008,140,1043'>
+                    <area data-emo='837' data-chari='1F534' class='emomapa' shape='rect' coords='141,1008,175,1043'>
+                    <area data-emo='838' data-chari='1F535' class='emomapa' shape='rect' coords='176,1008,210,1043'>
+                    <area data-emo='839' data-chari='1F53B' class='emomapa' shape='rect' coords='211,1008,245,1043'>
+                    <area data-emo='840' data-chari='1F536' class='emomapa' shape='rect' coords='0,1044,35,1079'>
+                    <area data-emo='841' data-chari='1F537' class='emomapa' shape='rect' coords='36,1044,70,1079'>
+                    <area data-emo='842' data-chari='1F538' class='emomapa' shape='rect' coords='71,1044,105,1079'>
+                    <area data-emo='843' data-chari='1F539' class='emomapa' shape='rect' coords='106,1044,140,1079'>
+                </map>
+
+
+            </div>
+        </div>
+
+    </article>
+</section>
+<section id='menugroup' data-transition='slide'>
+    <header>
+        <a data-back='left' href='#options' data-title='New group' data-icon='left' class='left' style='font-size:1.6em'>New group</a>
+    </header>
+    <article id='config2' data-title='New group' class='active'>
+        <form>
+            <div style="padding-left:5%;width:90%">
+                <br/><h1>Introduce name for the new group</h1><br/>
+                <input id="groupname" type="text" name="groupname" value="" placeholder="group name" class="nopretend" maxlength="25" style="width: 90%" />
+                <br/>
+                <div align="center">
+                    <button class="next">next step</button>
+                </div>
+            </div>
+        </form>
+    </article>
+</section>
+<section id='menuadd' data-transition='slide'>
+    <header>
+        <a data-back='left' href='#options' data-title='New group' data-icon='left' class='left' style='font-size:1.6em'>Select contacts to add</a>
+        <a href='#' id='acceptC' data-router='article' data-title='Contacts' data-icon='check' class='right'></a>
+    </header>
+    <article id='config3' data-title='New group' class='active list'>
+        <div>
+            <ul id="groupcontacts">
+            </ul>
+        </div>
+    </article>
+</section>
+<section id='profile' data-transition='slide' style="padding:0px;margin:0px">
+    <header>
+        <a data-back='left' href='#profile' data-title='profile' data-icon='left' class='left' style='font-size:1.6em'>Profile</a>
+    </header>
+    <article id='profile2' data-title='Profile' class='active' style="padding:0px">
+
+        <div align="center">
+            <br/>
+            <div id="profup">Click in the image to update</div>
+            <img id="avatar" class="avatar" src="fotos/avatar.png" style="width:65%;height:65%" />
+        </div>
+
+    </article>
+</section>
+<section id='menuconfig' data-transition='slide'>
+    <header>
+        <a data-back='left' href='#options' data-title='Config' data-icon='left' class='left' style='font-size:1.6em'>Config</a>
+    </header>
+    <article id='config4' data-title='Config' class='active'>
+        <form>
+            <div id="chekeaw" class="network"><h2><img id="checkvibra" src="img/checkblue.png" />Vibration when messages arrive</h2></div>
+        </form>
+    </article>
+</section>
+<section id='menuabout' data-transition='slide'>
+    <header>
+        <a data-back='left' href='#options' data-title='About us' data-icon='left' class='left' style='font-size:1.6em'>About us</a>
+    </header>
+    <article id='about' data-title='About us' class='active' style="padding: 5px">
+
+        <div align="center">
+            <br/>
+            ConnectA2 - www.connecta2.im<br/><br/>
+            by JustApps4All - www.justapps4all.com<br/><br/>
+            <img src="img/icono-128.png" />
+        </div>
+
+        <br/>Framework Lungo: GPLv3 licensed and a Commercial License for OEM uses
+        <br/>Emoticons Android:
+        <br/>
+        <div style="text-align: justify;width: 95%">
+            Copyright (c) 2005-2008, The Android Open Source Project
+            <br/>
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            <br/>
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+            <br/>
+            Apache License
+            Version 2.0, January 2004
+            http://www.apache.org/licenses/
+        </div>
+        <br/> Github's gemoji project:
+        <br/>
+        <div style="text-align: justify;width: 95%">
+            When distributed as a font the SIL Open Font License is applied. All source is licensed under the MIT License. All graphical assets are licensed under the CreativeCommons 3.0 License [CC-By with attribution requirement waived]. Edit, use, distribute as you please but never claim emoji and source created by Genshin Souzou as your own. All images created by Genshin Souzou are copyright Genshin Souzou. Images not created by Genshin Souzou will be listed with their copyright owners noted. Submitting code or images to Phantom Open Emoji means submitting those images to the above licenses. If you do not accept distribution of your copyrighted materials under the above licenses DO NOT submit them for inclusion.
+            <br/>
+            Genshin Souzou and all Phantom Open Emoji related parties and developers can not be held responsible for copyright-infringing images. If anyone submits an infringing image they will be held responsible.
+            <br/>
+            Attribution is not required but it is appreciated. To attribute please write "Emoji by Genshin Souzou K.K. [Phantom Creation Inc] at http://genshin.org ."
+        </div>
+        <br/>5 % of Symbola Unicode charts
+        <br/>GUI base in modification of 5% Loqui alpha GUI
+    </article>
+</section>
+<section id='dialog' data-transition='slide'>
+    <header data-back='left' data-title='Add contact'>
+    </header>
+    <article id='contactAdd' data-title='Add contact' class='active'>
+        <p class='tip'>
+            <img src='img/protocols.svg' />
+            You can add any Google Talk, Hangouts or XMPP/Jabber user.
+        </p>
+        <form>
+            <label for='jid'>Adress or JID:</label>
+            <input type='email' name='jid' id='jid' placeholder='user@provider.com'/>
+            <label for='nickname'>Nickname:</label>
+            <input type='text' name='nickname' id='nickname' placeholder='John Doe (optional)'/>
+        </form>
+    </article>
+    <article id='contactEdit' data-title='Editing contact'>
+        <p class='tip'>
+            <img class='avatar' />
+            <strong id='jid'></strong>
+        </p>
+        <form>
+            <label for='nickname'>Nickname:</label>
+            <input type='text' name='nickname' id='nickname'/>
+            <button id='delete' data-icon='remove'>Delete this contact</button>
+        </form>
+    </article>
+</section>
+<aside id='options'>
+    <header data-title='Options'></header>
+    <article id='chats' class='active list'>
+        <ul>
+            <li data-event='chat'><a data-icon='chat'>Chats</a></li>
+            <li data-event='info'><a data-icon='info'>List of contacts</a></li>
+            <li data-event='close'><a data-icon='cancel'>Close</a></li>
+        </ul>
+    </article>
+</aside>
+<audio src='audio/bip.ogg' preload></audio>
+<audio src='audio/bop.ogg' preload></audio>
+<img src="emo/frame1.png" style="visibility:hidden;display:none" />
+<img src="emo/frame2.png" style="visibility:hidden;display:none" />
+<img src="emo/frame3.png" style="visibility:hidden;display:none" />
+<img src="emo/frame4.png" style="visibility:hidden;display:none" />
+<img src="emo/frame5.png" style="visibility:hidden;display:none" />
+
+
+<script type='text/javascript' src='js/tapquo/quo.js'></script>
+<script type='text/javascript' src='js/tapquo/lungo.js'></script>
+<script type='text/javascript' src='js/all.js'></script>
+
+</body>
+</html>

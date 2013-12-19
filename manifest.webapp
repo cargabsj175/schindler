@@ -1,0 +1,59 @@
+{
+	"name": "ConnectA2",
+	"orientation": ["portrait","landscape-secondary"],
+    "type": "privileged",
+	"developer": {
+		"name": "justapps4all",
+		"url": "http://www.connecta2.im"
+	},
+	"launch_path": "/main.htm",
+	"description": "ConnectA2 Instant Messenger is a mobile chat app that allow you to connect to ConnectA2 network and WhatsApp network",
+	"version": "009",
+	"installs_allowed_from": ["*"],	
+	"icons": {
+		"30": "/img/icono-30.png",
+		"60": "/img/icono-60.png",
+		"128": "/img/icono-128.png"
+	},
+	"default_locale": "en",
+	"permissions": {
+  		"contacts": {
+    		"description": "Required to load contacts",
+    		"access": "readonly"
+    	},	
+		"alarms": {
+			"description": "Required for keeping the app always connected to server"
+		},
+	    "device-storage:videos": { 
+	    	"access": "readwrite",
+	    	"description": "Required to store videos in SDCard"
+	    },
+        "device-storage:pictures":{ 
+        	"access": "readwrite",
+        	"description": "Required to store pictures in SDCard" 
+        },
+        "device-storage:sdcard": { 
+        	"access": "readwrite",
+        	"description": "Required to store media in SDCard" 
+        },
+        "device-storage:music": { 
+        	"access": "readwrite",
+        	"description": "Required to store music in SDCard" 
+        },
+		"desktop-notification": {
+			"description": "Required for displaying alerts when app is on background"
+		},
+        "tcp-socket": {
+            "description": "I need TCPSocket API"
+        },
+	    "systemXHR": {
+	        "description": "Access to CORS"
+	    },
+	    "storage": {
+	        "description": "Unlimited storage"
+	    }
+	},
+	"messages": [
+     { "alarm": "/main.htm" }
+  	]
+}
