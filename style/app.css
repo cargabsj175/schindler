@@ -1,3 +1,13 @@
+@media screen and (orientation:portrait) {
+    html
+    { font-size: 1rem !important; }
+
+}
+@media screen and (orientation:landscape) {
+    html
+    { font-size: 1rem !important; }
+
+}
 @font-face {
   font-family:'mozTT';
   src:url('fonts/MozTT-Bold.ttf');
@@ -178,6 +188,8 @@ body[data-unread='1'] span.totalUnread {
   z-index: 1000;
   animation: blink .5s infinite alternate;
 }
+section#userdetails > article#user > ul > li,
+section#groupdetails > article#group > ul > li,
 section#main > article.list > div > ul > li {
   background-color: #F9F9F9;
   border-bottom: .05rem solid #ddd;
@@ -188,9 +200,13 @@ section#main > article.list > div > ul > li {
   perspective-origin: 3rem 3rem;
   transition: all .5s ease;
 }
+section#userdetails > article#user > ul > li:active,
+section#groupdetails > article#group > ul > li:active,
 section#main > article.list > div > ul > li:active {
   background-color: #00a2e8;
 }
+section#userdetails > article#user > ul > li > span.avatar,
+section#groupdetails > article#group > ul > li > span.avatar,
 section#main > article.list > ul > li > span.avatar {
   position: absolute;
   display: block;
@@ -199,15 +215,21 @@ section#main > article.list > ul > li > span.avatar {
   top: .4rem;
   left: .4rem;
 }
+section#userdetails > article#user > ul > li[data-unread='1'] > span.avatar,
+section#groupdetails > article#group > ul > li[data-unread='1'] > span.avatar,
 section#main > article.list > div > ul > li[data-unread='1'] > span.avatar {
   transform: rotateY(50deg) translateX(-.4rem);
 }
+section#userdetails > article#user > ul > li > span.avatar > img,
+section#groupdetails > article#group > ul > li > span.avatar > img,
 section#main > article.list > div > ul > li > span.avatar > img {
   display: block;
   width: 3.2rem;
   border-radius: .2rem;
   overflow: hidden;
 }
+section#userdetails > article#user > ul > li > span.avatar > img:not([src]),
+section#groupdetails > article#group > ul > li > span.avatar > img:not([src]),
 section#main > article.list > div > ul > li > span.avatar > img:not([src]) {
   height: 3.2rem;
   width: 3.2rem;
@@ -215,6 +237,8 @@ section#main > article.list > div > ul > li > span.avatar > img:not([src]) {
   background-size: 100%;
   background-color: #D4D2C5;
 }
+section#userdetails > article#user > ul > li > span.name,
+section#groupdetails > article#group > ul > li > span.name,
 section#main > article.list > div > ul > li > span.name {
   position: absolute;
   left: 4.2rem;
@@ -332,6 +356,9 @@ body:not([data-show="na"]) > section#main > article.list > ul > li > span.name {
 section#main > article.list > div > ul > li:active > span.name {
   color: #FFF;
 }
+section#userdetails > article#user > ul > li > span.last,
+section#groupdetails > article#group > ul > li > span.last,
+section#groupdetails > article#group > ul > li > span.last,
 section#main > article.list > div > ul > li > span.status,
 section#main > article.list > div > ul > li > span.last {
   position: absolute;
@@ -344,6 +371,8 @@ section#main > article.list > div > ul > li > span.last {
   height: 1.2em;
   overflow: hidden;
 }
+section#userdetails > article#user > ul > li:active > span.last
+section#groupdetails > article#group > ul > li:active > span.last,
 section#main > article.list > div > ul > li:active > span.status,
 section#main > article.list > div > ul > li:active > span.last {
   color: #FFF;
@@ -439,55 +468,21 @@ section#chat > header {
     background-color: #00a2e8;
     color: white;
 }
-section#menugroup > header {
-    height: 2.05rem;
+section#menugroup > header,
+section#profile > header,
+section#menuabout > header,
+section#menuconfig > header,
+section#menuadd > header,
+section#userdetails > header,
+section#groupdetails > header{
+    height: 2.2rem;
     background-color: #00a2e8;
-    border-bottom: .3rem solid #00a2e8;
     font-size: .8rem;
     line-height: 1rem;
     padding-top: 1rem;
     color: white;
 }
 
-section#profile > header {
-    height: 2.05rem;
-    background-color: #00a2e8;
-    border-bottom: .3rem solid #00a2e8;
-    font-size: .8rem;
-    line-height: 1rem;
-    padding-top: 1rem;
-    color: white;
-}
-
-section#menuabout > header {
-    height: 2.05rem;
-    background-color: #00a2e8;
-    border-bottom: .3rem solid #00a2e8;
-    font-size: .8rem;
-    line-height: 1rem;
-    padding-top: 1rem;
-    color: white;
-}
-
-section#menuconfig > header {
-    height: 2.05rem;
-    background-color: #00a2e8;
-    border-bottom: .3rem solid #00a2e8;
-    font-size: .8rem;
-    line-height: 1rem;
-    padding-top: 1rem;
-    color: white;
-}
-
-section#menuadd > header {
-    height: 2.05rem;
-    background-color: #00a2e8;
-    border-bottom: .3rem solid #00a2e8;
-    font-size: .8rem;
-    line-height: 1rem;
-    padding-top: 1rem;
-    color: white;
-}
 
 section#chat > header a {
     color: white;
@@ -519,7 +514,7 @@ section#chat > header .status {
 }
 section#main > header .status {
     position: absolute;
-    left: 10rem;
+    left: 7.5rem;
     top: 1.55rem;
     font-size: .9rem;
     line-height: 1rem;
@@ -756,6 +751,7 @@ section#dialog > article#contactEdit p.tip strong {
   width: 18rem;
   word-break: break-all;
 }
+/* NEW
 section [data-show=chat] {
   background-color: #2ECC71;
 }
@@ -777,6 +773,19 @@ section [data-show=na] {
 section#main article#contacts.disHide li[data-show='na'] {
 	display: none;
 }
+*/
+
+.participant{
+
+    padding-bottom:.5rem;
+    margin-top: .5rem;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-color:#00a2e8;
+    color:#444444;
+
+}
+
 /* KEYFRAMES */
 @keyframes blink {
 	from {
