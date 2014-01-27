@@ -190,6 +190,7 @@ body[data-unread='1'] span.totalUnread {
 }
 section#userdetails > article#user > ul > li,
 section#groupdetails > article#group > ul > li,
+section#contacts > article.list > div > ul > li,
 section#main > article.list > div > ul > li {
   background-color: #F9F9F9;
   border-bottom: .05rem solid #ddd;
@@ -202,11 +203,13 @@ section#main > article.list > div > ul > li {
 }
 section#userdetails > article#user > ul > li:active,
 section#groupdetails > article#group > ul > li:active,
+section#contacts > article.list > div > ul > li:active,
 section#main > article.list > div > ul > li:active {
   background-color: #00a2e8;
 }
 section#userdetails > article#user > ul > li > span.avatar,
 section#groupdetails > article#group > ul > li > span.avatar,
+section#contacts > article.list > ul > li > span.avatar,
 section#main > article.list > ul > li > span.avatar {
   position: absolute;
   display: block;
@@ -217,11 +220,13 @@ section#main > article.list > ul > li > span.avatar {
 }
 section#userdetails > article#user > ul > li[data-unread='1'] > span.avatar,
 section#groupdetails > article#group > ul > li[data-unread='1'] > span.avatar,
+section#contacts > article.list > div > ul > li[data-unread='1'] > span.avatar,
 section#main > article.list > div > ul > li[data-unread='1'] > span.avatar {
   transform: rotateY(50deg) translateX(-.4rem);
 }
 section#userdetails > article#user > ul > li > span.avatar > img,
 section#groupdetails > article#group > ul > li > span.avatar > img,
+section#contacts > article.list > div > ul > li > span.avatar > img,
 section#main > article.list > div > ul > li > span.avatar > img {
   display: block;
   width: 3.2rem;
@@ -230,6 +235,7 @@ section#main > article.list > div > ul > li > span.avatar > img {
 }
 section#userdetails > article#user > ul > li > span.avatar > img:not([src]),
 section#groupdetails > article#group > ul > li > span.avatar > img:not([src]),
+section#contacts > article.list > div > ul > li > span.avatar > img:not([src]),
 section#main > article.list > div > ul > li > span.avatar > img:not([src]) {
   height: 3.2rem;
   width: 3.2rem;
@@ -239,6 +245,7 @@ section#main > article.list > div > ul > li > span.avatar > img:not([src]) {
 }
 section#userdetails > article#user > ul > li > span.name,
 section#groupdetails > article#group > ul > li > span.name,
+section#contacts > article.list > div > ul > li > span.name,
 section#main > article.list > div > ul > li > span.name {
   position: absolute;
   left: 4.2rem;
@@ -251,7 +258,7 @@ section#main > article.list > div > ul > li > span.name {
   font-weight: 400;
   overflow: hidden;
 }
-
+section#menuaddparticipant > article.list > div > ul > li,
 section#menuadd > article.list > div > ul > li {
     background-color: #F9F9F9;
     border-bottom: .05rem solid #ddd;
@@ -262,9 +269,11 @@ section#menuadd > article.list > div > ul > li {
     perspective-origin: 3rem 3rem;
     transition: all .5s ease;
 }
+section#menuaddparticipant > article.list > div > ul > li:active,
 section#menuadd > article.list > div > ul > li:active {
     background-color: #00a2e8;
 }
+section#menuaddparticipant > article.list > ul > li > span.avatar,
 section#menuadd > article.list > ul > li > span.avatar {
     position: absolute;
     display: block;
@@ -273,15 +282,18 @@ section#menuadd > article.list > ul > li > span.avatar {
     top: .4rem;
     left: .4rem;
 }
+section#menuaddparticipant > article.list > div > ul > li[data-unread='1'] > span.avatar,
 section#menuadd > article.list > div > ul > li[data-unread='1'] > span.avatar {
     transform: rotateY(50deg) translateX(-.4rem);
 }
+section#menuaddparticipant > article.list > div > ul > li > span.avatar > img,
 section#menuadd > article.list > div > ul > li > span.avatar > img {
     display: block;
     width: 3.2rem;
     border-radius: .2rem;
     overflow: hidden;
 }
+section#menuaddparticipant > article.list > div > ul > li > span.avatar > img:not([src]),
 section#menuadd > article.list > div > ul > li > span.avatar > img:not([src]) {
     height: 3.2rem;
     width: 3.2rem;
@@ -289,6 +301,7 @@ section#menuadd > article.list > div > ul > li > span.avatar > img:not([src]) {
     background-size: 100%;
     background-color: #D4D2C5;
 }
+section#menuaddparticipant > article.list > div > ul > li > span.name,
 section#menuadd > article.list > div > ul > li > span.name {
     position: absolute;
     left: 4.2rem;
@@ -301,13 +314,16 @@ section#menuadd > article.list > div > ul > li > span.name {
     font-weight: 400;
     overflow: hidden;
 }
-
+body:not([data-show="na"]) > section#menuaddparticipant > article.list > ul > li > span.name,
 body:not([data-show="na"]) > section#menuadd > article.list > ul > li > span.name {
     left: 5.2rem;
 }
+section#menuaddparticipant > article.list > div > ul > li:active > span.name,
 section#menuadd > article.list > div > ul > li:active > span.name {
     color: #FFF;
 }
+section#menuaddparticipant > article.list > div > ul > li > span.status,
+section#menuaddparticipant > article.list > div > ul > li > span.last,
 section#menuadd > article.list > div > ul > li > span.status,
 section#menuadd > article.list > div > ul > li > span.last {
     position: absolute;
@@ -320,10 +336,13 @@ section#menuadd > article.list > div > ul > li > span.last {
     height: 1.2em;
     overflow: hidden;
 }
+section#menuaddparticipant > article.list > div > ul > li:active > span.status,
+section#menuaddparticipant > article.list > div > ul > li:active > span.last,
 section#menuadd > article.list > div > ul > li:active > span.status,
 section#menuadd > article.list > div > ul > li:active > span.last {
     color: #FFF;
 }
+section#menuaddparticipant > article.list > div > ul > li > span.show,
 section#menuadd > article.list > div > ul > li > span.show {
     display: block;
     position: absolute;
@@ -333,9 +352,11 @@ section#menuadd > article.list > div > ul > li > span.show {
     height: .7rem;
     border-radius: .1rem;
 }
+section#menuaddparticipant > article.list > div > ul > li > span.unread,
 section#menuadd > article.list > div > ul > li > span.unread {
     display: none;
 }
+section#menuaddparticipant > article.list > div > ul > li[data-unread='1'] > span.unread,
 section#menuadd > article.list > div > ul > li[data-unread='1'] > span.unread {
     display: block;
     position: absolute;
@@ -349,7 +370,7 @@ section#menuadd > article.list > div > ul > li[data-unread='1'] > span.unread {
 }
 /* ***** */
 
-
+body:not([data-show="na"]) > section#contacts > article.list > ul > li > span.name,
 body:not([data-show="na"]) > section#main > article.list > ul > li > span.name {
   left: 5.2rem;
 }
@@ -359,6 +380,8 @@ section#main > article.list > div > ul > li:active > span.name {
 section#userdetails > article#user > ul > li > span.last,
 section#groupdetails > article#group > ul > li > span.last,
 section#groupdetails > article#group > ul > li > span.last,
+section#contacts > article.list > div > ul > li > span.status,
+section#contacts > article.list > div > ul > li > span.last,
 section#main > article.list > div > ul > li > span.status,
 section#main > article.list > div > ul > li > span.last {
   position: absolute;
@@ -373,10 +396,13 @@ section#main > article.list > div > ul > li > span.last {
 }
 section#userdetails > article#user > ul > li:active > span.last
 section#groupdetails > article#group > ul > li:active > span.last,
+section#contacts > article.list > div > ul > li:active > span.status,
+section#contacts > article.list > div > ul > li:active > span.last,
 section#main > article.list > div > ul > li:active > span.status,
 section#main > article.list > div > ul > li:active > span.last {
   color: #FFF;
 }
+section#contacts > article.list > div > ul > li > span.show,
 section#main > article.list > div > ul > li > span.show {
   display: block;
   position: absolute;
@@ -386,9 +412,11 @@ section#main > article.list > div > ul > li > span.show {
   height: .7rem;
   border-radius: .1rem;
 }
+section#contacts > article.list > div > ul > li > span.unread,
 section#main > article.list > div > ul > li > span.unread {
   display: none;
 }
+section#contacts > article.list > div > ul > li[data-unread='1'] > span.unread,
 section#main > article.list > div > ul > li[data-unread='1'] > span.unread {
   display: block;
   position: absolute;
@@ -400,66 +428,12 @@ section#main > article.list > div > ul > li[data-unread='1'] > span.unread {
   padding: .1rem .3rem .2rem .2rem;
   font-weight: 700;
 }
-section#main > article#me > div#status {
-  position: absolute;
-  left: 1.5rem;
-  right: 1.5rem;
-}
-section#main > article#me > div#status > div {
-  margin: 1.5rem 0;
-}
-section#main > article#me > div#status > div > h1 {
-  color: #00a2e8;
-  margin-bottom: .5rem;
-  font-size: 1.1rem;
-}
-section#main > article#me > div#status > div > h2 {
-  font-weight: 300;
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: .5rem;
-}
-section#main > article#me > div#vcard {
-  background-color: #EBE9DD;
-  height: 6rem;
-  overflow: hidden;
-}
-section#main > article#me > div#vcard h1#fn {
-  position: relative;
-  top: 1.2rem;
-  left: 7rem;
-  max-width: 60vw;
-  font-size: 1.1rem;
-  line-height: 1rem;
-  color: #666;
-}
-section#main > article#me > div#vcard h2#jid {
-  position: relative;
-  top: 1.5rem;
-  left: 7rem;
-  font-size: .9rem;
-  font-weight: 300;
-  color: #666;
-}
-section#main > article#me > div#vcard span.avatar {
-  position: absolute;
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  background-image: url('../img/foovatar.png');
-  background-size: 100%;
-  background-color: #CCC;
-}
-section#main > article#me > div#vcard span.avatar img {
-  width: 6rem;
-}
 
+section#contacts > header,
 section#main > header {
     background-color: #00a2e8;
 }
+section#contacts > header a,
 section#main > header a {
     color: white;
 }
@@ -473,6 +447,7 @@ section#profile > header,
 section#menuabout > header,
 section#menuconfig > header,
 section#menuadd > header,
+section#menuaddparticipant > header,
 section#userdetails > header,
 section#groupdetails > header{
     height: 2.2rem;
@@ -487,7 +462,7 @@ section#groupdetails > header{
 section#chat > header a {
     color: white;
 }
-
+section#menuaddparticipant > header a,
 section#menuadd > header a {
     color: white;
     font-size:2rem;
@@ -512,6 +487,7 @@ section#chat > header .status {
   line-height: 1rem;
   font-weight: 200;
 }
+section#contacts > header .status,
 section#main > header .status {
     position: absolute;
     left: 7.5rem;
@@ -775,6 +751,7 @@ section#main article#contacts.disHide li[data-show='na'] {
 }
 */
 
+.addparticipant,
 .participant{
 
     padding-bottom:.5rem;
@@ -785,6 +762,11 @@ section#main article#contacts.disHide li[data-show='na'] {
     color:#444444;
 
 }
+.innerpar:active{
+    background-color:#00a2e8;
+}
+
+
 
 /* KEYFRAMES */
 @keyframes blink {

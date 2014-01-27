@@ -162,7 +162,7 @@
 
 
 
-.wordwrap { 
+.wordwrap {
    white-space: pre-wrap;      /* CSS3 */   
    white-space: -moz-pre-wrap; /* Firefox */    
    white-space: -pre-wrap;     /* Opera <7 */   

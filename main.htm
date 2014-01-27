@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<head>
+<head> 
     <meta charset='utf-8'>
     <title>ConnectA2</title>
     <meta name='description' content=''>
@@ -198,7 +198,7 @@
                     <option value="976">Mongolia</option>
                     <option value="382">Montenegro</option>
                     <option value="1">Montserrat</option>
-                    <option value="212">Moroo</option>
+                    <option value="212">Morocco</option>
                     <option value="258">Mozambique</option>
                     <option value="95">Myanmar</option>
                     <option value="264">Namibia</option>
@@ -319,7 +319,7 @@
         </form>
     </article>
 </section>
-<section id='main' data-transition='slide'>
+<section id='main'>
     <header id="titulom" data-title=''>
         <span class='showbar' data-show='na'></span>
         <span id="statusConnected" class='status'></span>
@@ -335,11 +335,10 @@
                 </div>
             </dd>
         </dl>
+
+        <a href='#' id='menubtn' data-title='Options' class='left' style='font-size:1.6em'><img src="img/icono-30.png" />&nbsp;CHATS</a>
         <nav>
-            <!-- a href='#me' data-router='article' data-title='Me' data-icon='user' class='left'></a -->
-            <a href='#' id='refreshc' data-router='article' data-title='Contacts' data-icon='down' class='right'></a>
-            <!-- a href='#chats' data-router='article' data-title='Chats' data-icon='message' class='left active'><span class='totalUnread'></span></a -->
-            <a href='#' id='menubtn' data-title='Options' data-icon='menu' class='left' style='font-size:1.6em'>CHATS</a>
+            <a href='#' id='mainmenu' data-router='article' data-title='Contacts' data-icon='down' class='right'></a>
         </nav>
     </header>
     <article id="chats" class='active list scroll'>
@@ -349,13 +348,22 @@
         </ul>
         </div>
     </article>
-    <article id='contacts' class='list scroll'>
+</section>
+<section id='contacts'>
+    <header id="titulom" data-title=''>
+        <span class='showbar' data-show='na'></span>
+        <nav>
+            <!-- a href='#me' data-router='article' data-title='Me' data-icon='user' class='left'></a -->
+            <a href='#' id='refreshc' data-router='article' data-title='Contacts' data-icon='refresh' class='right'></a>
+            <!-- a href='#chats' data-router='article' data-title='Chats' data-icon='message' class='left active'><span class='totalUnread'></span></a -->
+            <a href='#' id='menubtn' data-title='Options' data-icon='left' class='left' style='font-size:1.6em'>CONTACTS</a>
+        </nav>
+    </header>
+    <article id='contacts' class='active list scroll'>
         <div>
-        <ul id="contactlist">
-        </ul>
+            <ul id="contactlist">
+            </ul>
         </div>
-    </article>
-    <article id='me'>
     </article>
 </section>
 <section id='chat' data-transition='slide'>
@@ -1336,6 +1344,18 @@
         </form>
     </article>
 </section>
+<section id='menuaddparticipant' data-transition='slide'>
+    <header>
+        <a data-back='left' href='#options' data-title='New group' data-icon='left' class='left' style='font-size:1.6em'>Add participants</a>
+        <a href='#' id='acceptP' data-router='article' data-title='Contacts' data-icon='check' class='right'></a>
+    </header>
+    <article id='config5' data-title='New group' class='active list'>
+        <div>
+            <ul id="groupcontacts2">
+            </ul>
+        </div>
+    </article>
+</section>
 <section id='menugroup' data-transition='slide'>
     <header>
         <a data-back='left' href='#options' data-title='New group' data-icon='left' class='left' style='font-size:1.6em'>New group</a>
@@ -1355,7 +1375,7 @@
 </section>
 <section id='menuadd' data-transition='slide'>
     <header>
-        <a data-back='left' href='#options' data-title='New group' data-icon='left' class='left' style='font-size:1.6em'>Select contacts to add</a>
+        <a data-back='left' href='#options' data-title='New group' data-icon='left' class='left' style='font-size:1.6em'>Add participants</a>
         <a href='#' id='acceptC' data-router='article' data-title='Contacts' data-icon='check' class='right'></a>
     </header>
     <article id='config3' data-title='New group' class='active list'>
@@ -1374,7 +1394,37 @@
         <div align="center">
             <br/>
             <div id="profup">Click in the image to update</div>
-            <img id="avatar" class="avatar" src="fotos/avatar.png" style="width:65%;height:65%" />
+            <img id="avatar" class="avatar" src="fotos/avatar.png" style="width:50%;height:50%" />
+            <br>
+            <br>
+            <br>
+            <!-- form style="text-align: center">
+                <div style="padding-left:5%;width:90%">
+                    Your current status is
+                    <input id="statusText" name="statusText" value="" class="nopretend" style="width:95%;float:left" />
+                    <label class="select" style="width:95%;float:left">
+                        <select id="statusList" class="custom">
+                            <option value="00" selected="selected">Custom</option>
+                            <option value="01">Available</option>
+                            <option value="02">Busy</option>
+                            <option value="03">At school</option>
+                            <option value="04">At the movies</option>
+                            <option value="05">At work</option>
+                            <option value="06">Battery about to die</option>
+                            <option value="07">Can't talk</option>
+                            <option value="08">In a meeting</option>
+                            <option value="09">At the gym</option>
+                            <option value="10">Sleeping</option>
+                            <option value="11">Urgent calls only</option>
+                        </select>
+                    </label>
+                    <br>
+                    <br>
+                    <button id='updateStatus'>Update status</button>
+                </div>
+            </form -->
+
+            <!-- input id="statusText" type="text" name="statusText" value="" maxlength="25" style="width: 90%" / -->
         </div>
 
     </article>
@@ -1397,41 +1447,21 @@
 
         <div align="center">
             <br/>
-            ConnectA2 - www.connecta2.im<br/><br/>
+            ConnectA2 v11 - www.connecta2.im<br/><br/>
             by JustApps4All - www.justapps4all.com<br/><br/>
             <img src="img/icono-128.png" />
         </div>
 
-        <br/>Framework Lungo: GPLv3 licensed and a Commercial License for OEM uses
-        <br/>Emoticons Android:
-        <br/>
-        <div style="text-align: justify;width: 95%">
-            Copyright (c) 2005-2008, The Android Open Source Project
-            <br/>
-            Licensed under the Apache License, Version 2.0 (the "License");
-            you may not use this file except in compliance with the License.
-            <br/>
-            Unless required by applicable law or agreed to in writing, software
-            distributed under the License is distributed on an "AS IS" BASIS,
-            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-            See the License for the specific language governing permissions and
-            limitations under the License.
-            <br/>
-            Apache License
-            Version 2.0, January 2004
-            http://www.apache.org/licenses/
+        <div align="center">
+            <div style="text-align:justify;width:80%">
+                <br/><br/>Framework Lungo: GPLv3 licensed and a Commercial License for OEM uses
+                <br/><br/>~20% Gemoji CreativeCommons 3.0 License: Emoji by Genshin Souzou K.K. [Phantom Creation Inc] at http://genshin.org
+                <br/><br/>~5% of Symbola Unicode charts
+                <br/><br/>CoSeMe.js, Creative Commons Attribution Share-Alike License v3.0: anonymous
+                <br/><br/>Crypto.JS, The MIT License (MIT)
+            </div>
         </div>
-        <br/> Github's gemoji project:
-        <br/>
-        <div style="text-align: justify;width: 95%">
-            When distributed as a font the SIL Open Font License is applied. All source is licensed under the MIT License. All graphical assets are licensed under the CreativeCommons 3.0 License [CC-By with attribution requirement waived]. Edit, use, distribute as you please but never claim emoji and source created by Genshin Souzou as your own. All images created by Genshin Souzou are copyright Genshin Souzou. Images not created by Genshin Souzou will be listed with their copyright owners noted. Submitting code or images to Phantom Open Emoji means submitting those images to the above licenses. If you do not accept distribution of your copyrighted materials under the above licenses DO NOT submit them for inclusion.
-            <br/>
-            Genshin Souzou and all Phantom Open Emoji related parties and developers can not be held responsible for copyright-infringing images. If anyone submits an infringing image they will be held responsible.
-            <br/>
-            Attribution is not required but it is appreciated. To attribute please write "Emoji by Genshin Souzou K.K. [Phantom Creation Inc] at http://genshin.org ."
-        </div>
-        <br/>5 % of Symbola Unicode charts
-        <br/>GUI base in modification of 5% Loqui alpha GUI
+
     </article>
 </section>
 <section id='dialog' data-transition='slide'>
@@ -1481,24 +1511,23 @@
 
 
 <!-- files CryptoJS -->
-<script src="js/cryptoJS/core-min.js"></script>
-<script src="js/cryptoJS/cipher-core-min.js"></script>
-<script src="js/cryptoJS/enc-base64-min.js"></script>
-<script src="js/cryptoJS/md5-min.js"></script>
-<script src="js/cryptoJS/rc4-min.js"></script>
-<script src="js/cryptoJS/sha1-min.js"></script>
-<script src="js/cryptoJS/sha256-min.js"></script>
-<script src="js/cryptoJS/hmac-min.js"></script>
-<script src="js/cryptoJS/pbkdf2-min.js"></script>
-<script src="js/cryptoJS/_CJUInt8Array.js"></script>
-<script src="js/cryptoJS/_RC4bytes.js"></script>
-<script src="js/cryptoJS/_SHA1_IP.js"></script>
+<script type='text/javascript' src="js/cryptoJS/core-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/cipher-core-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/enc-base64-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/md5-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/rc4-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/sha1-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/sha256-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/hmac-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/pbkdf2-min.js"></script>
+<script type='text/javascript' src="js/cryptoJS/_CJUInt8Array.js"></script>
+<script type='text/javascript' src="js/cryptoJS/_RC4bytes.js"></script>
+<script type='text/javascript' src="js/cryptoJS/_SHA1_IP.js"></script>
 
 <script type='text/javascript' src='js/tapquo/quo.js'></script>
 <script type='text/javascript' src='js/tapquo/lungo.js'></script>
 <script src="js/xmpp/xmpp.js"></script>
 <script type='text/javascript' src='js/all.js'></script>
-
 
 
 </body>
