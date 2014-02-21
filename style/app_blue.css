@@ -61,7 +61,7 @@ section {
 }
 body > section#splash {
 	background-color: #FFF;
-	color: #51af00;
+	color: #00a2e8;
 }
 section#splash > article {
   top: 0!important;
@@ -80,7 +80,7 @@ body > section#splash h2 {
 	line-height: 1.3rem;
 }
 body > section#welcome {
-	background-color: #51af00;
+	background-color: #00a2e8;
 	color: #FFF;
 }
 body > section#welcome > div {
@@ -132,7 +132,7 @@ body > section#login > article#login h1 {
 	line-height: 1.3rem;
 	margin: .5rem 0 1rem 0;
 	font-weight: 500;
-	color: #51af00;
+	color: #00a2e8;
 }
 body > section#login > article#login h1 img.icon {
 	float: left;
@@ -153,7 +153,7 @@ body > section#confirma > article#confirma h1 {
 	line-height: 1.3rem;
 	margin: .5rem 0 1rem 0;
 	font-weight: 500;
-	color: #51af00;
+	color: #00a2e8;
 }
 body > section#confirma > article#confirma h1 img.icon {
 	float: left;
@@ -181,7 +181,7 @@ body[data-unread='1'] span.totalUnread {
   top: .8rem;
   left: .6rem;
   border-radius: .2rem;
-  background-color: #51af00;
+  background-color: #00a2e8;
   color: #FFF;
   border: .1rem solid #D14D3D;
   padding: .2rem .5rem .3rem .4rem;
@@ -207,7 +207,7 @@ section#userdetails > article#user > ul > li:active,
 section#groupdetails > article#group > ul > li:active,
 section#contacts > article.list > div > ul > li:active,
 section#main > article.list > div > ul > li:active {
-  background-color: #51af00;
+  background-color: #00a2e8;
 }
 section#userdetails > article#user > ul > li > span.avatar,
 section#groupdetails > article#group > ul > li > span.avatar,
@@ -273,7 +273,7 @@ section#menuadd > article.list > div > ul > li {
 }
 section#menuaddparticipant > article.list > div > ul > li:active,
 section#menuadd > article.list > div > ul > li:active {
-    background-color: #51af00;
+    background-color: #00a2e8;
 }
 section#menuaddparticipant > article.list > ul > li > span.avatar,
 section#menuadd > article.list > ul > li > span.avatar {
@@ -365,7 +365,7 @@ section#menuadd > article.list > div > ul > li[data-unread='1'] > span.unread {
     top: 1.4rem;
     left: 3rem;
     border-radius: .2rem;
-    background-color: #51af00;
+    background-color: #00a2e8;
     color: #FFF;
     padding: .1rem .3rem .2rem .2rem;
     font-weight: 700;
@@ -425,7 +425,7 @@ section#main > article.list > div > ul > li[data-unread='1'] > span.unread {
   top: 1.4rem;
   left: 3rem;
   border-radius: .2rem;
-  background-color: #51af00;
+  background-color: #00a2e8;
   color: #FFF;
   padding: .1rem .3rem .2rem .2rem;
   font-weight: 700;
@@ -558,7 +558,7 @@ section#chat > article#chat > ul#messages > li > div {
   width: calc(100% - 4.5rem);
 }
 section#chat > article#chat > ul#messages > li > div a{
-  color: #51af00;
+  color: #00a2e8;
 }
 section#chat > article#chat > ul#messages > li > div[data-type='out'] {
   text-align: right;
@@ -760,7 +760,7 @@ section [data-show=xa] {
   background-color: #F1C40F;
 }
 section [data-show=dnd] {
-  background-color: #51af00;
+  background-color: #00a2e8;
 }
 section [data-show=na] {
   background-color: #BDC3C7;
@@ -777,12 +777,12 @@ section#main article#contacts.disHide li[data-show='na'] {
     margin-top: .5rem;
     border-bottom-width:1px;
     border-bottom-style:solid;
-    border-color:#51af00;
+    border-color:#00a2e8;
     color:#444444;
 
 }
 .innerpar:active{
-    background-color:#51af00;
+    background-color:#00a2e8;
 }
 
 

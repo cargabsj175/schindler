@@ -84,9 +84,9 @@ section nav.groupbar {
 }
 section > article,
 section > [data-control="pull"] {
-  top: 3.2rem!important;
+  /* top: 3.2rem!important; */
   background-color: #f4f5f5;
-  color: #555;
+  color: #000;
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -138,7 +138,7 @@ aside > article ul li{
   cursor: pointer;
 }
 aside > article ul li:active{
-  background-color: #00a2e8;
+  background-color: #51af00;
 }
 aside > article ul li a span.icon{
   margin-right: .5rem;
@@ -155,10 +155,10 @@ section > header > nav a:not(.button) {
 }
 section > header > nav a:not(.button):active {
   background: rgba(0, 0, 0, .1)!important;
-  color: #00a2e8;
+  color: #51af00;
 }
 section > header > nav a:not(.button).active {
-  color: #00a2e8;
+  color: #51af00;
 }
 section > header > nav a span.icon{
   font-size: 1.3rem!important;
@@ -408,7 +408,7 @@ article button[disabled] {
 article button,
 article .button,
 article .tag:not(.icon) {
-  background-color: #00a2e8;
+  background-color: #51af00;
 }
 article button.secondary,
 article .button.secondary,
@@ -569,7 +569,7 @@ form select:focus,
 form textarea:focus,
 .form textarea:focus {
   background: #fafafa;
-  border-color: #00a2e8;
+  border-color: #51af00;
   color: rgba(0,0,0,0.75);
 }
 form input[type="text"][disabled],
