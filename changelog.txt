@@ -1,14 +1,41 @@
 RC1
-- feature: download video and progress bar
-- feature: download audio and progress bar
-- feature: async storage photo open
-- feature: async storage video open
-- feature: async storage audio open
-- fix more multimedia formats
-- fix contact wait problem
-- fix USA international/national format contacts
-- fix amount of memory to use
-- fix auto scroll images
-- fix preload image before to send
-- fix quality of hi resolution images
-- fix create new group
+- multiple language engine
+- contact search
+- date message splitter
+- change background
+- active links
+- fix sent time
+
+RC2
+- emoticons fix
+- load old messages fix
+
+RC3
+- load old messages fix 2
+- finish multilenguage strings
+- french language
+- fix links with 2 o more points
+- fix american sent time
+
+R4
+- fix overflow when read hundreds of messages or images
+- overload, see messages
+
+RC5
+- fix pico bubbles
+- ellipsis
+- fix emoticons alerts
+- fix date in media
+- fix menu touch
+- autoupdate version and agent
+
+RC6
+- put emoticons to chats name in list and dialog
+- groups when not loaded and after login success
+
+
+PENDING
+- migrateV13
+- green tick
+- save photo, video and audio at startup, for permissions.
+- register country <- getCountry

@@ -253,12 +253,14 @@ section#main > article.list > div > ul > li > span.name {
   left: 4.2rem;
   top: .8rem;
   right: 1rem;
-  color: #666;
+  color: #000;
   font-size: 1.1rem;
   line-height: 1.2rem;
-  height: 1.2rem;
+  height: 25px;
   font-weight: 400;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
 }
 section#menuaddparticipant > article.list > div > ul > li,
 section#menuadd > article.list > div > ul > li {
@@ -331,12 +333,14 @@ section#menuadd > article.list > div > ul > li > span.last {
     position: absolute;
     left: 4.2rem;
     top: 2.2rem;
-    color: #888;
+    color: #000;
     font-size: .9rem;
     font-weight: 200;
-    width: calc(100vw - 5rem);
+    width: 75%;
     height: 1.2em;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
 }
 section#menuaddparticipant > article.list > div > ul > li:active > span.status,
 section#menuaddparticipant > article.list > div > ul > li:active > span.last,
@@ -392,9 +396,11 @@ section#main > article.list > div > ul > li > span.last {
   color: #888;
   font-size: .9rem;
   font-weight: 200;
-  width: calc(100vw - 5rem);
-  height: 1.2em;
+  width: 75%;
+  height: 25px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
 }
 section#userdetails > article#user > ul > li:active > span.last
 section#groupdetails > article#group > ul > li:active > span.last,
@@ -453,13 +459,13 @@ section#menuadd > header,
 section#menuaddparticipant > header,
 section#userdetails > header,
 section#groupdetails > header{
-    height: 2.2rem;
+    height: 3.2rem;
     background-image:url('../img/toolbarv.png');
     background-repeat:repeat-x;
     background-size: .1rem,1rem;
     font-size: .8rem;
-    line-height: 1rem;
-    padding-top: 1rem;
+    line-height: 3.2rem;
+    margin-top: 0;
     color: white;
 }
 
@@ -479,8 +485,11 @@ section#groupdetails > header a {
 section#menuaddparticipant > header a,
 section#menuadd > header a {
     color: white;
-    font-size:2rem;
-    padding-right: 1rem;
+    font-size:1.8rem;
+    padding-right: .4rem;
+    padding-left: .4rem;
+    padding-top:0;
+    margin-top:0;
 }
 
 section#chat > header .name {
@@ -489,6 +498,10 @@ section#chat > header .name {
   top: .6rem;
   font-size: 1rem;
   line-height: 1rem;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
 }
 body:not([data-show="na"]) > section#chat > header .name {
   left: 5rem;
